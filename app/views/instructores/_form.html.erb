@@ -1,0 +1,36 @@
+<%= javascript_include_tag "fecha.js" %>
+<%= simple_form_for(@instructor, :html => { :multipart => true, :class => 'form-horizontal' }, :remote => true) do |f| %>
+  <%= f.error_notification %>
+  
+  <div class="responsive">
+    <div class="modal-body"> 
+      <div class="row" id ="colors">
+        <div class= "span6">
+          <center><h4></h4></center>
+          <hr>
+          <br><br>
+          <%= f.input :nombres,  :required => true %>
+          <%= f.input :apellidos,:required => true %>
+          <%= f.input :cedula,   :required => true %>
+          <%= f.input :email,    :required => true %>
+        </div>
+
+        <center><h4></h4></center>
+        <hr>
+        <div class ="span6">
+          <div class="row">
+            <%= f.input :telefono, :required => true %> 
+          </div>
+        </div>
+      </div>
+
+      
+      <div class= "span12">
+        <div class="form-actions">
+          <%= f.submit "Guardar", :class => 'btn btn-primary submit' %>
+          <%= link_to 'Atras', instructores_path, :class => 'btn btn-default' %>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>

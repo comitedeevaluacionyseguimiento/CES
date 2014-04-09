@@ -1,0 +1,70 @@
+<div >
+<%= simple_form_for(@user, :html => { :class => 'form-horizontal ' }, :remote => true)  do |f| %>
+
+  <% if @user.errors.any? %>
+   <div class="error_messages">
+     <h2>Form is invalid</h2>
+     <ul>
+       <% for message in @user.errors.full_messages %>
+         <li><%= message %></li>
+       <% end %>
+     </ul>
+   </div>
+ <% end %>
+
+  
+  
+    
+      <h2>Crear usuario </h2>
+      <div class="field control-group">
+        <%= f.label :nombre, :class => 'control-label' %>
+        <div class ="controls">
+         <%= f.text_field :nombre %>
+        </div> 
+      </div>
+
+      <div class="field control-group">
+        <%= f.label :username, :class => 'control-label ' %>
+        <div class ="controls">
+         <%= f.text_field :username %>
+        </div> 
+      </div>
+
+      <div class="field control-group">
+        <%= f.label :email, :class => 'control-label '  %>
+        <div class ="controls">
+         <%= f.text_field :email %>
+        </div> 
+      </div>
+      <div class="field control-group">
+        <%= f.label :password, :class => 'control-label ' %>
+        <div class ="controls">
+         <%= f.password_field :password %>
+        </div> 
+      </div>
+      <div class="field control-group">
+        <%= f.label :password_confirmacion %>
+        <div class ="controls">
+         <%= f.password_field :password_confirmation %>
+        </div>
+      </div> 
+      <% if has_role == "admin" %>
+         <div class="well well-small colorfu">
+            <% for role in Role.all %>
+                  <%= check_box_tag "user[role_ids][]", role.id, @user.roles.include?(role) %>
+                  <%= role.name %>
+                  <% if role.id % 4 == 0 %> 
+                    <br>
+                  <% end %>
+            <% end %>
+            <%= hidden_field_tag "user[role_ids][]", "" %>
+         </div>
+      <% end %>
+      <div class="control-group">
+        <div class ="controls">
+          <%= f.submit 'guardar', :class => 'btn btn-primary'%>
+          <%= link_to 'Atras', users_path, :class => 'btn btn-default' %>
+        </div>
+      </div> 
+<% end %>
+</div>

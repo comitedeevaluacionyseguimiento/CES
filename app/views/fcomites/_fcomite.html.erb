@@ -1,0 +1,19 @@
+<tr id=<%= "fcomite_#{fcomite.id}" %>>
+
+  <td><%= fcomite.fecha %></td>
+  <td><%= fcomite.lugar %></td>
+  <td><%= fcomite.tipo %></td>
+  <td><%= Fcomite.estado_fcomite(fcomite.fecha,fcomite.id)%>
+  </td>
+  <td></td>
+  <td><%= link_to 'Detalle Comite', fcomite_comites_path(fcomite), :class => 'btn btn-mini btn-inverse' %></td>
+  <td>
+    <% if has_role == "admin"%>
+      <%= link_to t('.edit', :default => t("helpers.links.edit")),edit_fcomite_path(fcomite),:remote => true, :class => 'btn btn-mini' %>
+      <%= link_to t('.destroy', :default => t("helpers.links.destroy")),fcomite_path(fcomite),:remote => true, :method => :delete,:data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },:class => 'btn btn-mini btn-danger' %>
+    <% end %>
+  </td>
+
+</tr>
+
+

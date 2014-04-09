@@ -1,0 +1,61 @@
+<%- model_class = Instructor -%>
+  <div class="buscador">
+    <div class="row-fluid">
+      <div class="row-fluid">
+        <div class="span6">
+          <%= form_tag request.path, :method => 'get' do %>
+            <%= content_tag :label do %>
+              <h4>Buscador: </h4>
+              <%= text_field_tag :search, params[:search], :placeholder => "Nombre Instructor search" %>
+
+              <%= submit_tag "Consultar", :nombres => nil %>
+            <% end %>
+          <% end %>
+        
+         <div class="span6">
+            <%= form_tag request.path, :method => 'get' do %>
+              <%= content_tag :label do %>
+                 <h4>Numero Registros:</h4>
+                <%= text_field_tag :registro, params[:registro], :class =>'input-mini' %>
+               <% end %>
+            <% end %>
+          </div>
+        </div>
+        <div class="colorp">
+          <h2>Instructores</h2>
+          <p>
+            Total Instructores: <%= @instructores.count %>
+          </p>
+          <br>
+          <br>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+   <br>
+  <br>
+  <table class="table table-bordered">
+   <thead>
+     <tr>
+       <th><%= sortable "id" %> </th>
+       <th><%= sortable "nombres" %></th>
+       <th><%= sortable "apellidos" %></th>
+       <th><%= sortable "cedula" %></th>
+       <th><%= sortable "email" %></th>
+       <th><%= sortable "telefono" %></th>
+       <th>Acciones</th>
+     </tr>
+   </thead>
+   <tbody>
+     <%= render @instructores %>
+   </tbody>
+  </table>
+  <% if has_role == "admin" %>
+    <%= link_to 'Nuevo Instructor', new_instructor_path, :remote => true, :class => 'btn btn-primary' %>
+  <% end %>
+  </div>
+
+  <div align="center">
+   <%= will_paginate @instructores, :previous_label => '&laquo; Anterior', :next_label => 'Siguiente&raquo;' %>
+</div>

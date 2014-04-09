@@ -1,0 +1,2 @@
+module CommitteesMembersHelper
+end

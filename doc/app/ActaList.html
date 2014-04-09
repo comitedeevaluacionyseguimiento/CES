@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+<title>class ActaList - Rails Application Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>app/pdfs/acta_list.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link">Prawn::Document
+  
+</nav>
+
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-c-new">::new</a>
+    
+    <li><a href="#method-i-body">#body</a>
+    
+    <li><a href="#method-i-header">#header</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./doc/README_FOR_APP.html">README_FOR_APP</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./Ability.html">Ability</a>
+  
+    <li><a href="./Acta.html">Acta</a>
+  
+    <li><a href="./ActaList.html">ActaList</a>
+  
+    <li><a href="./ActasController.html">ActasController</a>
+  
+    <li><a href="./ActasHelper.html">ActasHelper</a>
+  
+    <li><a href="./ApplicationController.html">ApplicationController</a>
+  
+    <li><a href="./ApplicationHelper.html">ApplicationHelper</a>
+  
+    <li><a href="./AprendicesController.html">AprendicesController</a>
+  
+    <li><a href="./AprendicesHelper.html">AprendicesHelper</a>
+  
+    <li><a href="./Aprendiz.html">Aprendiz</a>
+  
+    <li><a href="./Asignacioncomite.html">Asignacioncomite</a>
+  
+    <li><a href="./AsignacioncomitesController.html">AsignacioncomitesController</a>
+  
+    <li><a href="./AsignacioncomitesHelper.html">AsignacioncomitesHelper</a>
+  
+    <li><a href="./Ayuda.html">Ayuda</a>
+  
+    <li><a href="./AyudasController.html">AyudasController</a>
+  
+    <li><a href="./Cancelacion.html">Cancelacion</a>
+  
+    <li><a href="./Centro.html">Centro</a>
+  
+    <li><a href="./CentrosController.html">CentrosController</a>
+  
+    <li><a href="./CentrosHelper.html">CentrosHelper</a>
+  
+    <li><a href="./CitacionList.html">CitacionList</a>
+  
+    <li><a href="./Comite.html">Comite</a>
+  
+    <li><a href="./ComiteList.html">ComiteList</a>
+  
+    <li><a href="./ComiteMailer.html">ComiteMailer</a>
+  
+    <li><a href="./ComitesController.html">ComitesController</a>
+  
+    <li><a href="./ComitesHelper.html">ComitesHelper</a>
+  
+    <li><a href="./CommitteeMembers.html">CommitteeMembers</a>
+  
+    <li><a href="./CommitteesMembersController.html">CommitteesMembersController</a>
+  
+    <li><a href="./CommitteesMembersHelper.html">CommitteesMembersHelper</a>
+  
+    <li><a href="./Condicionamiento.html">Condicionamiento</a>
+  
+    <li><a href="./Configuracion.html">Configuracion</a>
+  
+    <li><a href="./ConfiguracionesController.html">ConfiguracionesController</a>
+  
+    <li><a href="./ConfiguracionesHelper.html">ConfiguracionesHelper</a>
+  
+    <li><a href="./Coordinador.html">Coordinador</a>
+  
+    <li><a href="./CoordinadoresController.html">CoordinadoresController</a>
+  
+    <li><a href="./CoordinadoresHelper.html">CoordinadoresHelper</a>
+  
+    <li><a href="./Estado.html">Estado</a>
+  
+    <li><a href="./EstadosController.html">EstadosController</a>
+  
+    <li><a href="./EstadosHelper.html">EstadosHelper</a>
+  
+    <li><a href="./Fcomite.html">Fcomite</a>
+  
+    <li><a href="./FcomitesController.html">FcomitesController</a>
+  
+    <li><a href="./FcomitesHelper.html">FcomitesHelper</a>
+  
+    <li><a href="./Historia.html">Historia</a>
+  
+    <li><a href="./HistoriasController.html">HistoriasController</a>
+  
+    <li><a href="./HistoriasHelper.html">HistoriasHelper</a>
+  
+    <li><a href="./InicioController.html">InicioController</a>
+  
+    <li><a href="./InicioHelper.html">InicioHelper</a>
+  
+    <li><a href="./Instructor.html">Instructor</a>
+  
+    <li><a href="./InstructorMailer.html">InstructorMailer</a>
+  
+    <li><a href="./InstructoresController.html">InstructoresController</a>
+  
+    <li><a href="./InstructoresHelper.html">InstructoresHelper</a>
+  
+    <li><a href="./LlamadoAtencion.html">LlamadoAtencion</a>
+  
+    <li><a href="./Object.html">Object</a>
+  
+    <li><a href="./Programa.html">Programa</a>
+  
+    <li><a href="./ProgramasController.html">ProgramasController</a>
+  
+    <li><a href="./ProgramasHelper.html">ProgramasHelper</a>
+  
+    <li><a href="./Queja.html">Queja</a>
+  
+    <li><a href="./QuejaList.html">QuejaList</a>
+  
+    <li><a href="./QuejaMailer.html">QuejaMailer</a>
+  
+    <li><a href="./QuejasController.html">QuejasController</a>
+  
+    <li><a href="./QuejasHelper.html">QuejasHelper</a>
+  
+    <li><a href="./Role.html">Role</a>
+  
+    <li><a href="./RolesController.html">RolesController</a>
+  
+    <li><a href="./RolesHelper.html">RolesHelper</a>
+  
+    <li><a href="./SessionsController.html">SessionsController</a>
+  
+    <li><a href="./SessionsHelper.html">SessionsHelper</a>
+  
+    <li><a href="./TipoDocumento.html">TipoDocumento</a>
+  
+    <li><a href="./TiposDocumentosController.html">TiposDocumentosController</a>
+  
+    <li><a href="./TiposDocumentosHelper.html">TiposDocumentosHelper</a>
+  
+    <li><a href="./User.html">User</a>
+  
+    <li><a href="./UserList.html">UserList</a>
+  
+    <li><a href="./UserRole.html">UserRole</a>
+  
+    <li><a href="./Usercomite.html">Usercomite</a>
+  
+    <li><a href="./UsercomiteList.html">UsercomiteList</a>
+  
+    <li><a href="./UsercomiteMailer.html">UsercomiteMailer</a>
+  
+    <li><a href="./UsercomitesController.html">UsercomitesController</a>
+  
+    <li><a href="./UsercomitesHelper.html">UsercomitesHelper</a>
+  
+    <li><a href="./UsersController.html">UsersController</a>
+  
+    <li><a href="./UsersHelper.html">UsersHelper</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class ActaList</h1>
+
+  <div id="description" class="description">
+    
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Class Methods</h3>
+
+    
+      <div id="method-c-new" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">new</span><span
+            class="method-args">(nombres,ficha,plural_singular,actas,view)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <h2 id="method-c-new-label-M%C3%A9todo+constructor+de+la+clase+actalist+">Método constructor de la clase actalist </h2>
+          
+
+          
+          <div class="method-source-code" id="new-source">
+            <pre><span class="ruby-comment"># File app/pdfs/acta_list.rb, line 5</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">nombres</span>,<span class="ruby-identifier">ficha</span>,<span class="ruby-identifier">plural_singular</span>,<span class="ruby-identifier">actas</span>,<span class="ruby-identifier">view</span>)
+   <span class="ruby-keyword">super</span>()
+   <span class="ruby-ivar">@actas</span> = <span class="ruby-identifier">actas</span>
+   <span class="ruby-ivar">@vista</span> = <span class="ruby-identifier">view</span> 
+   <span class="ruby-ivar">@nombres</span> = <span class="ruby-identifier">nombres</span>
+   <span class="ruby-ivar">@ficha</span> = <span class="ruby-identifier">ficha</span>
+   <span class="ruby-ivar">@plural_singular</span> =  <span class="ruby-identifier">plural_singular</span>
+   <span class="ruby-identifier">header</span>
+   <span class="ruby-identifier">body</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- new-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- new-method -->
+
+    
+    </section><!-- public-class-method-details -->
+  
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-body" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">body</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <h2 id="method-i-body-label-M%C3%A9todo+para+imprimir+el+cuerpo+del+pdf">Método para imprimir el cuerpo del pdf</h2>
+          
+
+          
+          <div class="method-source-code" id="body-source">
+            <pre><span class="ruby-comment"># File app/pdfs/acta_list.rb, line 36</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">body</span>
+
+  <span class="ruby-identifier">bounding_box</span> [<span class="ruby-value">0</span>, <span class="ruby-identifier">cursor</span>], <span class="ruby-value">:width</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">bounds</span>.<span class="ruby-identifier">right</span>, <span class="ruby-value">:height</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">40</span> <span class="ruby-keyword">do</span>
+    
+    <span class="ruby-identifier">text</span> <span class="ruby-node">&quot;Reunion Acta #{@actas.num_acta}&quot;</span>, <span class="ruby-value">:align</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:center</span>, <span class="ruby-value">:valign</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:center</span>
+    <span class="ruby-identifier">transparent</span>(<span class="ruby-value">2</span>) { <span class="ruby-identifier">stroke_bounds</span> }
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-identifier">table</span>([
+    [<span class="ruby-node">&quot;Itagui, Fecha \n\n  #{@actas.fecha}               &quot;</span>, <span class="ruby-node">&quot;Hora inicio \n\n  #{@actas.hora_inicio}               &quot;</span>,<span class="ruby-node">&quot;Hora Terminacion \n\n   #{@actas.hora_terminacion}               &quot;</span>]
+  ])
+
+  <span class="ruby-identifier">bounding_box</span> [<span class="ruby-value">0</span>, <span class="ruby-identifier">cursor</span>], <span class="ruby-value">:width</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">bounds</span>.<span class="ruby-identifier">right</span>, <span class="ruby-value">:height</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">60</span> <span class="ruby-keyword">do</span>
+  
+    <span class="ruby-identifier">text</span> <span class="ruby-node">&quot;  LUGAR: \n#{@actas.comite.fcomite.lugar} &quot;</span>, <span class="ruby-value">:valign</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:center</span>
+    <span class="ruby-identifier">transparent</span>(<span class="ruby-value">2</span>) { <span class="ruby-identifier">stroke_bounds</span> }
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-identifier">bounding_box</span> [<span class="ruby-value">0</span>, <span class="ruby-identifier">cursor</span>], <span class="ruby-value">:width</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">bounds</span>.<span class="ruby-identifier">right</span>, <span class="ruby-value">:height</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">40</span> <span class="ruby-keyword">do</span>
+  
+    <span class="ruby-identifier">text</span> <span class="ruby-string">&quot;  Tema:  &quot;</span><span class="ruby-operator">+</span><span class="ruby-node">&quot;Comite #{@actas.comite.fcomite.tipo} de Evaluación y  Seguimiento &quot;</span>, <span class="ruby-value">:valign</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:center</span>
+    <span class="ruby-identifier">transparent</span>(<span class="ruby-value">2</span>) { <span class="ruby-identifier">stroke_bounds</span> }
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-identifier">table</span>([
+      [<span class="ruby-node">&quot;OBJETIVO DE LA REUNIÓN:\n Analizar las dificultades en téminos disciplinarios y académicas  frente a su proceso de formación #{@plural_singular} de #{@actas.comite.programa.descripcion}, Ficha #{@ficha} \n 
+        #{@nombres}&quot;</span> ]
+    ])
+  <span class="ruby-identifier">bounding_box</span> [<span class="ruby-value">0</span>, <span class="ruby-identifier">cursor</span>], <span class="ruby-value">:width</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">bounds</span>.<span class="ruby-identifier">right</span>, <span class="ruby-value">:height</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">40</span> <span class="ruby-keyword">do</span>
+  
+    <span class="ruby-identifier">text</span> <span class="ruby-string">&quot;Desarrollo  Reunion:&quot;</span>,<span class="ruby-value">:align</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:center</span>, <span class="ruby-value">:valign</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:center</span>
+    <span class="ruby-identifier">transparent</span>(<span class="ruby-value">2</span>) { <span class="ruby-identifier">stroke_bounds</span> }
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-identifier">table</span>([[<span class="ruby-node">&quot;El Comité #{@actas.comite.fcomite.tipo} de Evaluacion y Seguimiento, se reunió con el propósito de analizar la situación #{@plural_singular} #{@nombres}, en términos Diciplinarios y Académicos, frente a su proceso de formación. Los aprendices fueron citados dando cumplimiento al debido proceso, permitiédoles realizar los descargos pertinentes, sobre la queja presentada por la instructora: \n\n #{@actas.desarrollo_reunion},&quot;</span>],
+      [<span class="ruby-node">&quot;Conclusiones:  \n\n El Comité #{@actas.comite.fcomite.tipo} de Evaluación y Seguimiento recomienda para los aprendices: \n\n #{@actas.conclusiones}&quot;</span>]
+  ])
+
+  <span class="ruby-identifier">draw_text</span> <span class="ruby-string">&quot;________________________&quot;</span>, <span class="ruby-value">:at</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">0</span>,<span class="ruby-value">100</span>], <span class="ruby-identifier">size</span><span class="ruby-operator">:</span> <span class="ruby-value">12</span>
+  <span class="ruby-identifier">draw_text</span> <span class="ruby-string">&quot;Recibido Registro y Certificacón &quot;</span>, <span class="ruby-value">:at</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">0</span>,<span class="ruby-value">80</span>], <span class="ruby-identifier">size</span><span class="ruby-operator">:</span> <span class="ruby-value">11</span>
+  <span class="ruby-identifier">draw_text</span> <span class="ruby-string">&quot;________________________&quot;</span>, <span class="ruby-value">:at</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">350</span>,<span class="ruby-value">100</span>], <span class="ruby-identifier">size</span><span class="ruby-operator">:</span> <span class="ruby-value">12</span>
+  <span class="ruby-identifier">draw_text</span> <span class="ruby-string">&quot;Oficina de Bienestar &quot;</span>, <span class="ruby-value">:at</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">350</span>,<span class="ruby-value">80</span>], <span class="ruby-identifier">size</span><span class="ruby-operator">:</span> <span class="ruby-value">11</span>
+
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- body-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- body-method -->
+
+    
+      <div id="method-i-header" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">header</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <h2 id="method-i-header-label-M%C3%A9todo+para+definir+el+logo+con+su+ubicaci%C3%B3n+as%C3%AD+como+el+t%C3%ADtulo+del+reporte++">Método para definir el logo con su ubicación así como el título del reporte  </h2>
+          
+
+          
+          <div class="method-source-code" id="header-source">
+            <pre><span class="ruby-comment"># File app/pdfs/acta_list.rb, line 17</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">header</span>
+
+  <span class="ruby-identifier">logopath</span> =  <span class="ruby-node">&quot;#{Rails.root}/app/assets/images/senac.jpg&quot;</span>
+  <span class="ruby-identifier">image</span> <span class="ruby-identifier">logopath</span>, <span class="ruby-value">:width</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">50</span>, <span class="ruby-value">:height</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">64</span>, <span class="ruby-value">:at</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">10</span>,<span class="ruby-value">718</span>]
+
+  <span class="ruby-identifier">my_table</span> = <span class="ruby-identifier">make_table</span>([ [<span class="ruby-string">&quot;                                             &quot;</span>], [<span class="ruby-string">&quot;                                         &quot;</span>], [<span class="ruby-string">&quot;                     &quot;</span>] ])
+  <span class="ruby-identifier">table</span>([[<span class="ruby-string">&quot;                    &quot;</span>, <span class="ruby-string">&quot;                                                                                                         &quot;</span>, <span class="ruby-identifier">my_table</span>]])
+
+  
+  <span class="ruby-identifier">move_down</span> <span class="ruby-value">10</span>
+  <span class="ruby-identifier">draw_text</span> <span class="ruby-string">&quot;SISTEMA INTEGRADO DE GESTIÓN&quot;</span>, <span class="ruby-value">:at</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">100</span>, <span class="ruby-value">705</span>], <span class="ruby-identifier">size</span><span class="ruby-operator">:</span> <span class="ruby-value">14</span>
+  <span class="ruby-identifier">draw_text</span> <span class="ruby-string">&quot;ACTA&quot;</span>, <span class="ruby-value">:at</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">200</span>, <span class="ruby-value">686</span>], <span class="ruby-identifier">size</span><span class="ruby-operator">:</span> <span class="ruby-value">14</span>
+  <span class="ruby-identifier">draw_text</span> <span class="ruby-string">&quot;Proceso Direccionamiento Estratégico&quot;</span>, <span class="ruby-value">:at</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">110</span>, <span class="ruby-value">670</span>],<span class="ruby-identifier">size</span><span class="ruby-operator">:</span> <span class="ruby-value">13</span>
+  <span class="ruby-identifier">draw_text</span> <span class="ruby-string">&quot;Procedimiento Control de Documentos y Registros&quot;</span>, <span class="ruby-value">:at</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">85</span>, <span class="ruby-value">656</span>], <span class="ruby-identifier">size</span><span class="ruby-operator">:</span> <span class="ruby-value">13</span>
+  <span class="ruby-identifier">draw_text</span> <span class="ruby-string">&quot;Código:  F002-P001-DE&quot;</span>, <span class="ruby-value">:at</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">395</span>, <span class="ruby-value">705</span>], <span class="ruby-identifier">size</span><span class="ruby-operator">:</span> <span class="ruby-value">13</span>
+  <span class="ruby-identifier">draw_text</span> <span class="ruby-string">&quot;Versión: 02&quot;</span>, <span class="ruby-value">:at</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">395</span>, <span class="ruby-value">680</span>], <span class="ruby-identifier">size</span><span class="ruby-operator">:</span> <span class="ruby-value">13</span>
+  <span class="ruby-identifier">draw_text</span> <span class="ruby-node">&quot;#{@actas.fecha}&quot;</span>, <span class="ruby-value">:at</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">395</span>,<span class="ruby-value">656</span>], <span class="ruby-identifier">size</span><span class="ruby-operator">:</span> <span class="ruby-value">13</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- header-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- header-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.2.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

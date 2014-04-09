@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  aprendiz: 
+  queja: 
+  comite: 
+  acta: 
+  tipo_recomendacion: MyString
+  llamada_atencion: MyText
+
+two:
+  aprendiz: 
+  queja: 
+  comite: 
+  acta: 
+  tipo_recomendacion: MyString
+  llamada_atencion: MyText

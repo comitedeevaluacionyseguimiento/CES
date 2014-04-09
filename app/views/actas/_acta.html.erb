@@ -1,0 +1,21 @@
+<tr id=<%= "acta_#{acta.id}" %>>
+  <td><%= link_to acta.id, edit_acta_path(acta), :remote => true %></td>
+  <td><%= acta.fecha %></td>
+  <td><%= acta.hora_inicio %></td>
+  <td><%= acta.hora_terminacion %></td>
+  <td><%= acta.comite.nombreapren %></td>
+  <td>
+    <%= link_to 'Mostrar', acta, :remote => true, :class => 'btn btn-mini ' %>
+    <% if has_role == "admin" %>
+        <%= link_to 'Editar', edit_acta_path(acta), :remote => true,
+        :class => 'btn btn-warning btn-mini' %>
+    <% end %>
+    <%= link_to image_tag("pdf_icon.gif",:width => "30x30" ), acta_path(acta, :format => "pdf"),:target => "_blank" %>
+    <% if has_role == "admin" %>
+      <%= link_to 'Recomendaciones', recomendaciones_path(:acta_id => acta.id),  :remote => true,:class => 'btn btn-warning btn-mini' %>
+      <%= link_to "Editar llamado Atencion", llamado_atencion_path(:acta_id => acta.id), :remote => true, :class => "btn btn-mini"%>
+    <% end %>
+  </td>
+</tr> 
+
+

@@ -1,0 +1,12 @@
+<tr id=<%= "usercomite_#{usercomite.id}" %>>
+  <td><%= usercomite.nombre %></td>
+  <td><%= usercomite.emails %></td>
+  <td></td>
+  
+  <td>
+    <%= link_to 'Mostrar', fcomite_comite_usercomite_path(@fcomite,@comite,usercomite), :remote => true, :class => 'btn btn-mini ' %>
+    <%= link_to 'Editar', edit_fcomite_comite_usercomite_path(@fcomite,@comite,usercomite), :remote => true,
+        :class => 'btn btn-warning btn btn-mini' %>
+    <%= link_to 'Eliminar', fcomite_comite_usercomite_path(@fcomite,@comite,usercomite),:data => { :confirm => 'Esta Seguro' },:method => :delete, :remote => true, :class => 'btn btn-mini btn-danger' %>
+  </td>
+</tr>

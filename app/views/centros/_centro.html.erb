@@ -1,0 +1,18 @@
+<tr id=<%= "centro_#{centro.id}" %>>
+  <td><%= link_to centro.id, edit_centro_path(centro), :remote => true %></td>
+  <td><%= centro.nombre %></td>
+  <td><%= centro.abreviatura %></td>
+  <td><%= link_to 'Coordinadores', centro_coordinadores_path(centro), :class => 'btn btn-mini btn-inverse' %></td>
+  <td>
+      <%= link_to 'Mostrar', centro, :remote => true, :class => 'btn btn-mini btn-default' %>
+
+    <% if has_role == "admin" %>
+      <%= link_to 'Editar', edit_centro_path(centro), :remote => true,
+        :class => 'btn btn-mini btn-warning' %>
+
+      <%= link_to 'Eliminar', centro, 
+        :data => { :confirm => 'Esta Seguro?' },
+        :method => :delete, :remote => true, :class => 'btn btn-mini btn-danger' %>
+    <% end %>
+  </td>
+</tr>

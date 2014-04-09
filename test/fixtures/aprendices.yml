@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  tipo_documento: 
+  num_document: MyString
+  programa: 
+  ficha: MyString
+  historia: 
+
+two:
+  name: MyString
+  tipo_documento: 
+  num_document: MyString
+  programa: 
+  ficha: MyString
+  historia: 

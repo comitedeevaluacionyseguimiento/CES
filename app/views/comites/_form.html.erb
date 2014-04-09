@@ -1,0 +1,57 @@
+<%= javascript_include_tag "fecha.js" %>
+<%= javascript_include_tag "aprendicesupd.js" %> 
+<%= simple_form_for([@fcomite,@comite], :html => { :class => 'form-horizontal' }, :remote => true) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="responsive">
+    <div class="modal-body">  
+      <div class="control-group">
+        <div class="row" id ="colors">
+          <div class= "span5"> 
+            <hr>
+              <div class="control-group">
+                <div class =" input-append bootstrap-timepicker offset2">
+                  
+                  
+                   <%= f.input_field :hora, :as => :string, :label => "hora", :class => "time_picker input-small"%>
+                  <span class="add-on">hora<i class="icon-time"></i></span>
+                   
+                </div>  
+              </div>
+
+              <div class="controls-group" >
+                <label class="control-label">Nombres Aprendices</label>
+                <div class="controls">
+                  <%= f.text_area(:nombreapren, :rows => 10) %>
+                </div>  
+              </div>
+          </div>
+        
+         
+          <center></center>
+          <hr>
+
+          <div class ="span3">
+            <div class="row">
+              <div class ="control-group">
+               <label class="control-label">Programas</label>
+                <div class="controls" >
+                  <%= f.collection_select :programa_id, Programa.all, :id, :abreviatura, :prompt => "Seleccione un nombre" %>
+                </div>
+              </div>
+            
+              <%= f.input :ficha %>
+            </div>  
+          </div>
+
+          <div class= "span12">
+            <div class="form-actions">
+            	<%= f.submit "Guardar", :class => 'btn btn-primary' %>
+              <%= link_to 'Atras', fcomite_comites_path(@fcomite), :class => 'btn btn-default' %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>

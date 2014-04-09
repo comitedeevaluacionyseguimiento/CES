@@ -1,0 +1,59 @@
+<%- model_class = Usercomite -%>
+<div class="buscador">
+    <div class="row-fluid">
+      <div class="row-fluid">
+        <div class="span6">
+          <%= form_tag request.path, :method => 'get' do %>
+            <%= content_tag :label do %>
+              <h4>Nombre</h4>
+              <%= text_field_tag :search, params[:search],:id=>"efecto1" %>
+              <%= submit_tag "Consultar", :nombre => nil, :class => "btn btn-mini btn-info", :id=>"efecto1"%>
+            <% end %>
+          <% end %>
+
+          <div class="span6">
+            <%= form_tag request.path, :method => 'get' do %>
+              <%= content_tag :label do %>
+                <h4>Numero Registros</h4>
+                <%= text_field_tag :registro, params[:registro], :class =>'input-mini',:id=>"efecto1" %>
+               <% end %>
+            <% end %>
+          </div>
+        </div>
+        <div class=" colorp">
+            
+              <h2>Usuarios Comite</h2>
+            
+              <p>
+               Total Usuarios comite : <%= @usercomites.total_entries %>
+              </p>
+              <br>
+              <br>
+              <br>
+        </div>
+      </div>
+    </div>
+  </div>
+<br>
+<table class="table table-bordered table-hover pretty">
+  <thead>
+    <tr>  
+      <th><%= sortable "nombre", "Nombre Completo" %></th> 
+      <th><%= sortable "email" %></th>
+      <th><%= sortable "cargo" %></th> 
+      <th>Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <%= render @usercomites %>
+  </tbody>
+</table>
+<%= link_to 'Nuevo Usuario Comite', new_fcomite_comite_usercomite_path(@fcomite,@comite), :class => 'btn btn-primary', :remote => true %>
+<!--<%= link_to image_tag("pdf_icon.gif"), fcomite_comite_usercomites_path(:format => :pdf), :id => "pdfc",:target => "_blank" %> -->
+
+<%= link_to "atras", fcomite_comites_path,:class => 'btn btn-primary' %>
+
+<div align="center">
+  <%= will_paginate @usercomites, :previous_label => '&laquo; Anterior', :next_label => 'Siguiente
+  &raquo;' %>
+</div>

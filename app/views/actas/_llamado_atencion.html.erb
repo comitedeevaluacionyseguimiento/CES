@@ -1,0 +1,25 @@
+<div class="responsive asignar_programacion">
+    <div>  
+      
+        <%= form_tag asignar_llamado_atencion_path, :method => 'get' do %>
+		    <%= content_tag :label do %>
+
+		    	<div class ="control-group">
+	             <label class="control-label">Seleccione Aprendiz</label>
+	                <div class="controls" >
+	                 <%= collection_select :queja_id, params[:queja_id], @quejas, :id, :nombres, :prompt => "Seleccione", :id=>'efecto1', :class => "fcomite" %>
+	                </div>
+	            </div>
+
+			    <p>
+					<div class="span7 llamado_oculto">
+		              <label class="control-label" for="inputName">Texto a Editar</label>
+		              <%= text_area_tag :llamado_de_atencion, "LLAMADO DE ATENCIÓN Y PLAN DE MEJORAMIENTO, a cargo de", :rows => 7, :class => "span5" %>
+		            </div>  
+		        </p> 
+		    <% end %>
+		    <%= submit_tag "Crear", :class => "btn btn-success",   :id=>'efecto1'  %>
+		<% end %>
+
+    </div>
+</div>

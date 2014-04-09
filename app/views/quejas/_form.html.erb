@@ -1,0 +1,86 @@
+<%= javascript_include_tag "fecha.js" %>
+<%= simple_form_for(@queja, :html => { :class => 'form-horizontal', :multipart => true, :id  => 'create_queja' }, :remote => true) do |f| %>
+
+  <%= f.error_notification %>
+
+  <div class="responsive">
+    <div class="modal-body">  
+      <div class="control-group">
+        <div class="row" id ="colors">
+          <div class= "span6"> 
+            <center><h4>Información del Aprendiz</h4></center>
+            <hr>
+
+            <%= f.input :fechainforme, :as => :string, :label => "Fecha", :input_html => {  :class=>"datepicker" } %>
+            <%= f.input :nombres %>
+            <%= f.input :apellidos %>
+            
+            <div class ="control-group">
+             <label class="control-label">Tipo Documento</label>
+              <div class="controls" >
+                <%= f.collection_select :tipo_documento_id, TipoDocumento.all, :id, :descripcion, :prompt => "Seleccione" %>
+              </div>
+            </div>
+            <%= f.input :identificacion %>
+            <%= f.input :telefono %>
+            <%= f.input :email %>
+
+            <div class ="control-group">
+              <label class="control-label" for="inputName">Programas</label>
+              <div class="controls" >
+                <%= f.collection_select  :programa_id, Programa.all,:id, :descripcion,:order => 'descripcion',:label => false, :required => true, :prompt => "Seleccione Programa",:input_html => {:class => 'span2' } %>
+              </div>
+            </div>
+
+            <%= f.input :ficha %>
+            
+            <div class ="control-group">
+              <%= f.label :descripcion_falta %>
+              <div class="controls" >
+                <%= f.text_area(:descripcion, :rows => 4) %>
+              </div>
+            </div>
+          </div>
+          <center><h4>Tipo de falta y Datos del Informante</h4></center>
+          <hr>
+
+          <div class ="span6">
+            <div class="row">
+              <div class="controls-group" >
+                <label class="control-label">Tipo de Comite</label>
+                <div class="controls">
+                 <%= select_tag(:falta, options_for_select([["selecione una Falta"],['Académica','Académica'],['Disciplinaria','Disciplinaria'],['Académica/Disciplinaria','Académica/Disciplinaria ']])) %>
+                </div>  
+              </div>
+             
+              <div class ="control-group">
+                <%= f.label :testigos_o_pruebas_que_aporta %>
+                <div class="controls" >
+                 <%= f.text_area(:testigos, :rows => 4)%>
+                </div>
+              </div>
+
+               <div class ="control-group">
+                <%= f.label :Nombre_y_dirección_de_quien_informa %>
+                <div class="controls" >
+                 <%= f.text_area(:nombreinfor, :rows => 4)%>
+                </div>
+              </div>
+                <%= f.input :cargo %>
+                <%= image_tag @queja.evidencia.url(:small) %>
+                <%= f.file_field :evidencia %>
+            </div>
+          </div>
+        </div>
+       
+        <div class= "span12">
+          <div class="form-actions">
+          	  <%= f.button :submit, :class => 'btn-primary submit' %>
+             <%= link_to 'Atras', quejas_path, :class => 'btn btn-default' %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>
+

@@ -1,0 +1,25 @@
+<%- model_class = Comite -%>
+<h1><%=t '.title', :default => model_class.model_name.human %></h1>
+
+<div class="responsive">
+	<div class="modal-body">
+		<div class='row' id='colors'>
+			<div class='cargo'>
+				<div class="span4">
+				    <center><h4>Información del comite</h4></center>
+				    <hr>
+                    <center><div>
+					    <p class="text-info">Hora </p>
+					    <p><%= @comite.hora %></p>
+					    <p class="text-info">Nombres de los Aprendices </p>
+					    <p><%= @comite.nombreapren %></p>
+					    <p class="text-info">Programa </p>
+					    <p><%= @comite.programa.abreviatura %></p>
+					    <p class="text-info">Ficha</p>
+					    <p><%= @comite.ficha %></p>
+					</div><center>
+				</div>
+			</div>
+		</div>
+    </div>
+</div>

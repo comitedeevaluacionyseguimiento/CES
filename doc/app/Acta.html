@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+<title>class Acta - Rails Application Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>app/models/acta.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link">ActiveRecord::Base
+  
+</nav>
+
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-c-fechaes">::fechaes</a>
+    
+    <li><a href="#method-c-llamado_atencion">::llamado_atencion</a>
+    
+    <li><a href="#method-c-nombres_pdf_acta">::nombres_pdf_acta</a>
+    
+    <li><a href="#method-c-numero_acta">::numero_acta</a>
+    
+    <li><a href="#method-c-quejas_acta">::quejas_acta</a>
+    
+    <li><a href="#method-c-search">::search</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./doc/README_FOR_APP.html">README_FOR_APP</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./Ability.html">Ability</a>
+  
+    <li><a href="./Acta.html">Acta</a>
+  
+    <li><a href="./ActaList.html">ActaList</a>
+  
+    <li><a href="./ActasController.html">ActasController</a>
+  
+    <li><a href="./ActasHelper.html">ActasHelper</a>
+  
+    <li><a href="./ApplicationController.html">ApplicationController</a>
+  
+    <li><a href="./ApplicationHelper.html">ApplicationHelper</a>
+  
+    <li><a href="./AprendicesController.html">AprendicesController</a>
+  
+    <li><a href="./AprendicesHelper.html">AprendicesHelper</a>
+  
+    <li><a href="./Aprendiz.html">Aprendiz</a>
+  
+    <li><a href="./Asignacioncomite.html">Asignacioncomite</a>
+  
+    <li><a href="./AsignacioncomitesController.html">AsignacioncomitesController</a>
+  
+    <li><a href="./AsignacioncomitesHelper.html">AsignacioncomitesHelper</a>
+  
+    <li><a href="./Ayuda.html">Ayuda</a>
+  
+    <li><a href="./AyudasController.html">AyudasController</a>
+  
+    <li><a href="./Cancelacion.html">Cancelacion</a>
+  
+    <li><a href="./Centro.html">Centro</a>
+  
+    <li><a href="./CentrosController.html">CentrosController</a>
+  
+    <li><a href="./CentrosHelper.html">CentrosHelper</a>
+  
+    <li><a href="./CitacionList.html">CitacionList</a>
+  
+    <li><a href="./Comite.html">Comite</a>
+  
+    <li><a href="./ComiteList.html">ComiteList</a>
+  
+    <li><a href="./ComiteMailer.html">ComiteMailer</a>
+  
+    <li><a href="./ComitesController.html">ComitesController</a>
+  
+    <li><a href="./ComitesHelper.html">ComitesHelper</a>
+  
+    <li><a href="./CommitteeMembers.html">CommitteeMembers</a>
+  
+    <li><a href="./CommitteesMembersController.html">CommitteesMembersController</a>
+  
+    <li><a href="./CommitteesMembersHelper.html">CommitteesMembersHelper</a>
+  
+    <li><a href="./Condicionamiento.html">Condicionamiento</a>
+  
+    <li><a href="./Configuracion.html">Configuracion</a>
+  
+    <li><a href="./ConfiguracionesController.html">ConfiguracionesController</a>
+  
+    <li><a href="./ConfiguracionesHelper.html">ConfiguracionesHelper</a>
+  
+    <li><a href="./Coordinador.html">Coordinador</a>
+  
+    <li><a href="./CoordinadoresController.html">CoordinadoresController</a>
+  
+    <li><a href="./CoordinadoresHelper.html">CoordinadoresHelper</a>
+  
+    <li><a href="./Estado.html">Estado</a>
+  
+    <li><a href="./EstadosController.html">EstadosController</a>
+  
+    <li><a href="./EstadosHelper.html">EstadosHelper</a>
+  
+    <li><a href="./Fcomite.html">Fcomite</a>
+  
+    <li><a href="./FcomitesController.html">FcomitesController</a>
+  
+    <li><a href="./FcomitesHelper.html">FcomitesHelper</a>
+  
+    <li><a href="./Historia.html">Historia</a>
+  
+    <li><a href="./HistoriasController.html">HistoriasController</a>
+  
+    <li><a href="./HistoriasHelper.html">HistoriasHelper</a>
+  
+    <li><a href="./InicioController.html">InicioController</a>
+  
+    <li><a href="./InicioHelper.html">InicioHelper</a>
+  
+    <li><a href="./Instructor.html">Instructor</a>
+  
+    <li><a href="./InstructorMailer.html">InstructorMailer</a>
+  
+    <li><a href="./InstructoresController.html">InstructoresController</a>
+  
+    <li><a href="./InstructoresHelper.html">InstructoresHelper</a>
+  
+    <li><a href="./LlamadoAtencion.html">LlamadoAtencion</a>
+  
+    <li><a href="./Object.html">Object</a>
+  
+    <li><a href="./Programa.html">Programa</a>
+  
+    <li><a href="./ProgramasController.html">ProgramasController</a>
+  
+    <li><a href="./ProgramasHelper.html">ProgramasHelper</a>
+  
+    <li><a href="./Queja.html">Queja</a>
+  
+    <li><a href="./QuejaList.html">QuejaList</a>
+  
+    <li><a href="./QuejaMailer.html">QuejaMailer</a>
+  
+    <li><a href="./QuejasController.html">QuejasController</a>
+  
+    <li><a href="./QuejasHelper.html">QuejasHelper</a>
+  
+    <li><a href="./Role.html">Role</a>
+  
+    <li><a href="./RolesController.html">RolesController</a>
+  
+    <li><a href="./RolesHelper.html">RolesHelper</a>
+  
+    <li><a href="./SessionsController.html">SessionsController</a>
+  
+    <li><a href="./SessionsHelper.html">SessionsHelper</a>
+  
+    <li><a href="./TipoDocumento.html">TipoDocumento</a>
+  
+    <li><a href="./TiposDocumentosController.html">TiposDocumentosController</a>
+  
+    <li><a href="./TiposDocumentosHelper.html">TiposDocumentosHelper</a>
+  
+    <li><a href="./User.html">User</a>
+  
+    <li><a href="./UserList.html">UserList</a>
+  
+    <li><a href="./UserRole.html">UserRole</a>
+  
+    <li><a href="./Usercomite.html">Usercomite</a>
+  
+    <li><a href="./UsercomiteList.html">UsercomiteList</a>
+  
+    <li><a href="./UsercomiteMailer.html">UsercomiteMailer</a>
+  
+    <li><a href="./UsercomitesController.html">UsercomitesController</a>
+  
+    <li><a href="./UsercomitesHelper.html">UsercomitesHelper</a>
+  
+    <li><a href="./UsersController.html">UsersController</a>
+  
+    <li><a href="./UsersHelper.html">UsersHelper</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class Acta</h1>
+
+  <div id="description" class="description">
+    
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Class Methods</h3>
+
+    
+      <div id="method-c-fechaes" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">fechaes</span><span
+            class="method-args">(fecha_comite)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <h2 id="method-c-fechaes-label-Este+m%C3%A9todo+recibe+la+fecha+del+comite+y+organiza+el+formato+de+esta+manera+%3D%3E+%222014%2FMarzo%2F05%22">Este método recibe la fecha del comite y organiza el formato de esta manera =&gt; “2014/Marzo/05”</h2>
+          
+
+          
+          <div class="method-source-code" id="fechaes-source">
+            <pre><span class="ruby-comment"># File app/models/acta.rb, line 35</span>
+    <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">fechaes</span>(<span class="ruby-identifier">fecha_comite</span>)
+        <span class="ruby-identifier">fecha</span> = <span class="ruby-identifier">fecha_comite</span>.<span class="ruby-identifier">to_time</span>
+        <span class="ruby-ivar">@mes</span> = <span class="ruby-identifier">fecha</span>.<span class="ruby-identifier">month</span>
+        <span class="ruby-keyword">case</span> <span class="ruby-ivar">@mes</span>
+          <span class="ruby-keyword">when</span> <span class="ruby-value">1</span>
+            <span class="ruby-ivar">@m</span> = <span class="ruby-string">&quot;Enero&quot;</span>
+          <span class="ruby-keyword">when</span> <span class="ruby-value">2</span>
+            <span class="ruby-ivar">@m</span> = <span class="ruby-string">&quot;Febrero&quot;</span>
+          <span class="ruby-keyword">when</span> <span class="ruby-value">3</span>
+            <span class="ruby-ivar">@m</span> = <span class="ruby-string">&quot;Marzo&quot;</span>
+          <span class="ruby-keyword">when</span> <span class="ruby-value">4</span>
+            <span class="ruby-ivar">@m</span> = <span class="ruby-string">&quot;Abril&quot;</span>
+          <span class="ruby-keyword">when</span> <span class="ruby-value">5</span>
+            <span class="ruby-ivar">@m</span> = <span class="ruby-string">&quot;Mayo&quot;</span>
+          <span class="ruby-keyword">when</span> <span class="ruby-value">6</span>
+            <span class="ruby-ivar">@m</span> = <span class="ruby-string">&quot;Junio&quot;</span>
+          <span class="ruby-keyword">when</span> <span class="ruby-value">7</span>
+            <span class="ruby-ivar">@m</span> = <span class="ruby-string">&quot;Julio&quot;</span>
+          <span class="ruby-keyword">when</span> <span class="ruby-value">8</span>
+            <span class="ruby-ivar">@m</span> = <span class="ruby-string">&quot;Agosto&quot;</span>
+          <span class="ruby-keyword">when</span> <span class="ruby-value">9</span>
+            <span class="ruby-ivar">@m</span> = <span class="ruby-string">&quot;Septiembre&quot;</span>
+          <span class="ruby-keyword">when</span> <span class="ruby-value">10</span>
+            <span class="ruby-ivar">@m</span> = <span class="ruby-string">&quot;Octubre&quot;</span>
+          <span class="ruby-keyword">when</span> <span class="ruby-value">11</span>
+            <span class="ruby-ivar">@m</span> = <span class="ruby-string">&quot;Noviembre&quot;</span>
+          <span class="ruby-keyword">when</span> <span class="ruby-value">12</span>
+            <span class="ruby-ivar">@m</span> = <span class="ruby-string">&quot;Diciembre&quot;</span>
+        <span class="ruby-keyword">end</span>
+        <span class="ruby-ivar">@fecha_comite</span> = <span class="ruby-identifier">fecha</span>.<span class="ruby-identifier">strftime</span>(<span class="ruby-node">&quot;%d/#{@m}/%Y&quot;</span>)
+        <span class="ruby-keyword">return</span> <span class="ruby-ivar">@fecha_comite</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- fechaes-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- fechaes-method -->
+
+    
+      <div id="method-c-llamado_atencion" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">llamado_atencion</span><span
+            class="method-args">(queja_id,llamado_atencion)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Este método recibe el id de queja, y el string <a
+href="Acta.html#method-c-llamado_atencion">::llamado_atencion</a>, con esto
+consulta la historia por queja_id y guarda el valor del string en historia</p>
+          
+
+          
+          <div class="method-source-code" id="llamado_atencion-source">
+            <pre><span class="ruby-comment"># File app/models/acta.rb, line 110</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">llamado_atencion</span>(<span class="ruby-identifier">queja_id</span>,<span class="ruby-identifier">llamado_atencion</span>)
+    <span class="ruby-ivar">@historia</span> = <span class="ruby-constant">Historia</span>.<span class="ruby-identifier">find_by_queja_id</span>(<span class="ruby-identifier">queja_id</span>)
+    <span class="ruby-ivar">@historia</span>.<span class="ruby-identifier">llamada_atencion</span> = <span class="ruby-identifier">llamado_atencion</span>
+    <span class="ruby-ivar">@histori_update</span> = <span class="ruby-ivar">@historia</span>.<span class="ruby-identifier">save</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-ivar">@histori_update</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- llamado_atencion-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- llamado_atencion-method -->
+
+    
+      <div id="method-c-nombres_pdf_acta" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">nombres_pdf_acta</span><span
+            class="method-args">(acta)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <h2 id="method-c-nombres_pdf_acta-label-Este+m%C3%A9todo+recibe+el+id+de+acta+y+saca+los+nombres+para+el+pdf+de+acta+">Este método recibe el id de acta y saca los nombres para el pdf de acta </h2>
+          
+
+          
+          <div class="method-source-code" id="nombres_pdf_acta-source">
+            <pre><span class="ruby-comment"># File app/models/acta.rb, line 13</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">nombres_pdf_acta</span>(<span class="ruby-identifier">acta</span>)
+        <span class="ruby-ivar">@acta</span> = <span class="ruby-constant">Acta</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">acta</span>)
+        <span class="ruby-identifier">idsq</span> = <span class="ruby-ivar">@acta</span>.<span class="ruby-identifier">comite</span>.<span class="ruby-identifier">idsqueja</span>.<span class="ruby-identifier">split</span>(<span class="ruby-string">&quot;,&quot;</span>)
+        <span class="ruby-ivar">@nombres</span> = <span class="ruby-string">&quot;&quot;</span>
+        <span class="ruby-keyword">if</span> <span class="ruby-identifier">idsq</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">1</span>
+                <span class="ruby-identifier">idsq</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">id</span><span class="ruby-operator">|</span>
+                        <span class="ruby-ivar">@queja</span> = <span class="ruby-constant">Queja</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">id</span>)
+                        <span class="ruby-ivar">@nombres</span> <span class="ruby-operator">+=</span> <span class="ruby-node">&quot;- #{@queja.nombres} #{@queja.apellidos}, con  #{@queja.tipo_documento.sigla}. #{@queja.identificacion} \n&quot;</span>
+                        <span class="ruby-ivar">@ficha</span> = <span class="ruby-ivar">@queja</span>.<span class="ruby-identifier">ficha</span>
+                <span class="ruby-keyword">end</span>
+                <span class="ruby-ivar">@plural_singular</span> = <span class="ruby-string">&quot;de los(as) aprendices &quot;</span>
+                <span class="ruby-keyword">return</span> <span class="ruby-ivar">@nombres</span>, <span class="ruby-ivar">@ficha</span>, <span class="ruby-ivar">@plural_singular</span>
+        <span class="ruby-keyword">else</span>
+                <span class="ruby-ivar">@queja</span> = <span class="ruby-constant">Queja</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">idsq</span>[<span class="ruby-value">0</span>])
+                <span class="ruby-ivar">@nombre</span> = <span class="ruby-node">&quot;- #{@queja.nombres} #{@queja.apellidos}, con  #{@queja.tipo_documento.sigla}. #{@queja.identificacion}&quot;</span>
+                <span class="ruby-ivar">@ficha</span> = <span class="ruby-ivar">@queja</span>.<span class="ruby-identifier">ficha</span>
+                <span class="ruby-ivar">@plural_singular</span> = <span class="ruby-string">&quot;del aprendiz &quot;</span>
+                <span class="ruby-keyword">return</span> <span class="ruby-ivar">@nombre</span>, <span class="ruby-ivar">@ficha</span>, <span class="ruby-ivar">@plural_singular</span>
+        <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- nombres_pdf_acta-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- nombres_pdf_acta-method -->
+
+    
+      <div id="method-c-numero_acta" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">numero_acta</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <h2 id="method-c-numero_acta-label-Este+m%C3%A9todo+genera+un+n%C3%BAmero+secuencial+y+lo+reinicia+por+a%C3%B1o+">Este método genera un número secuencial y lo reinicia por año </h2>
+          
+
+          
+          <div class="method-source-code" id="numero_acta-source">
+            <pre><span class="ruby-comment"># File app/models/acta.rb, line 69</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">numero_acta</span>
+
+    <span class="ruby-ivar">@fecha_actual</span> = <span class="ruby-constant">Time</span>.<span class="ruby-identifier">now</span>
+    <span class="ruby-identifier">año_actual</span>   = <span class="ruby-ivar">@fecha_actual</span>.<span class="ruby-identifier">year</span>
+
+    <span class="ruby-ivar">@ultima_acta</span> = <span class="ruby-constant">Acta</span>.<span class="ruby-identifier">last</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-ivar">@ultima_acta</span>
+            <span class="ruby-identifier">fecha</span>    = <span class="ruby-ivar">@ultima_acta</span>.<span class="ruby-identifier">fecha_creacion</span>.<span class="ruby-identifier">to_time</span>
+           <span class="ruby-identifier">año_acta</span> = <span class="ruby-identifier">fecha</span>.<span class="ruby-identifier">year</span>
+
+           <span class="ruby-keyword">if</span>  <span class="ruby-ivar">@ultima_acta</span>.<span class="ruby-identifier">num_acta</span> <span class="ruby-operator">==</span> <span class="ruby-string">&quot;&quot;</span> <span class="ruby-keyword">or</span> <span class="ruby-identifier">año_acta</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">año_actual</span>
+                   <span class="ruby-ivar">@num_acta</span> = <span class="ruby-string">&quot;01&quot;</span>
+                   <span class="ruby-keyword">else</span>
+                           <span class="ruby-identifier">num_acta</span> = <span class="ruby-identifier">num_acta</span>.<span class="ruby-identifier">to_i</span>
+                           <span class="ruby-identifier">acta</span> = <span class="ruby-constant">Acta</span>.<span class="ruby-identifier">last</span>.<span class="ruby-identifier">num_acta</span>
+                           <span class="ruby-ivar">@num_acta</span> = <span class="ruby-identifier">acta</span>.<span class="ruby-identifier">to_i</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>
+                           <span class="ruby-keyword">if</span> <span class="ruby-ivar">@num_acta</span> <span class="ruby-operator">&lt;</span> <span class="ruby-value">10</span>
+                                   <span class="ruby-keyword">return</span> <span class="ruby-node">&quot;0#{@num_acta}&quot;</span>
+                           <span class="ruby-keyword">end</span>
+                   <span class="ruby-keyword">end</span>
+        <span class="ruby-keyword">else</span>
+           <span class="ruby-ivar">@num_acta</span> = <span class="ruby-string">&quot;01&quot;</span>
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-node">&quot;#{@num_acta}&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- numero_acta-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- numero_acta-method -->
+
+    
+      <div id="method-c-quejas_acta" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">quejas_acta</span><span
+            class="method-args">(acta)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <h2 id="method-c-quejas_acta-label-Este+m%C3%A9todo+recibe+al+id+de+acta+y+retorna+un+objeto+con+las+queja%2C+que+se+recuperan+del+campo+de+comite+idsqueja">Este método recibe al id de acta y retorna un objeto con las queja, que se recuperan del campo de comite idsqueja</h2>
+          
+
+          
+          <div class="method-source-code" id="quejas_acta-source">
+            <pre><span class="ruby-comment"># File app/models/acta.rb, line 96</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">quejas_acta</span>(<span class="ruby-identifier">acta</span>)
+    <span class="ruby-ivar">@acta</span> = <span class="ruby-constant">Acta</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">acta</span>)
+    <span class="ruby-ivar">@comite</span> = <span class="ruby-constant">Comite</span>.<span class="ruby-identifier">find</span>(<span class="ruby-ivar">@acta</span>.<span class="ruby-identifier">comite_id</span>)
+    <span class="ruby-identifier">quejasid</span> = <span class="ruby-ivar">@comite</span>.<span class="ruby-identifier">idsqueja</span>.<span class="ruby-identifier">split</span>(<span class="ruby-string">&quot;, &quot;</span>)
+    <span class="ruby-ivar">@quejas</span> = []
+
+    <span class="ruby-identifier">quejasid</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">id</span><span class="ruby-operator">|</span>
+            <span class="ruby-identifier">queja</span> = <span class="ruby-constant">Queja</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">id</span>)
+            <span class="ruby-ivar">@quejas</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">queja</span>
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-ivar">@quejas</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- quejas_acta-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- quejas_acta-method -->
+
+    
+      <div id="method-c-search" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">search</span><span
+            class="method-args">(search)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <h2 id="method-c-search-label-buscador%2C+recibe+el+argumento+ingresado+en+la+vista+y+realiza+la+busqueda+">buscador, recibe el argumento ingresado en la vista y realiza la busqueda </h2>
+          
+
+          
+          <div class="method-source-code" id="search-source">
+            <pre><span class="ruby-comment"># File app/models/acta.rb, line 8</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">search</span>(<span class="ruby-identifier">search</span>)
+            <span class="ruby-identifier">where</span>(<span class="ruby-string">&#39;fecha like ?&#39;</span>, <span class="ruby-node">&quot;%#{search}%&quot;</span>)
+    <span class="ruby-keyword">end</span></pre>
+          </div><!-- search-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- search-method -->
+
+    
+    </section><!-- public-class-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.2.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

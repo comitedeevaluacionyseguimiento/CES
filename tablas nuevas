@@ -1,0 +1,46 @@
+tablas nuevas  
+
+1 asuntos
+
+rails g scaffold asunto nombre:string  
+
+2 coordiaca
+
+rails g scaffold coordiacade nombre:string email:string  --skip-stylesheets
+
+3 fcomite
+
+rails g scaffold fcomite fecha:string lugar:string --skip-stylesheets
+
+4 asistentescomite
+
+rails g scaffoldasistencomite nombre:string funcionario:references comite:references
+
+5 citacion aprendiz
+
+rails g scaffold citacion queja:references comite:references asunto:references 
+
+6 comite
+rails g scaffold comite lugar:string fecha:string
+
+7 detalle comite
+
+rails g scaffold detallecomite asistente:references comite:references hora:string tema:string
+
+8 asignacion a coomite
+rails g scaffold asignacioncomite nombres:string apellidos:string programa:string ficha:string --skip-stylesheets
+
+9 estados
+
+rails g scaffold estado nombre:string descripcion:string  --skip-stylesheets
+
+rake db:migrate
+rails g bootstrap:themed teams -f
+
+committee members
+
+rails g scaffold committee_members name:string email:string --skip-stylesheets
+
+rails g scaffold aprendiz name:string tipo_documento:references num_document:string programa:references ficha:string --skip-stylesheets
+
+rails g scaffold  historia aprendiz:references queja:references comite:references acta:references tipo_recomendacion:string llamada_atencion:text  --skip-stylesheets 

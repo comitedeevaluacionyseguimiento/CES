@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+<title>class ComitesController - Rails Application Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>app/controllers/comites_controller.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link"><a href="ApplicationController.html">ApplicationController</a>
+  
+</nav>
+
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-i-asignar_userc">#asignar_userc</a>
+    
+    <li><a href="#method-i-crear_acta">#crear_acta</a>
+    
+    <li><a href="#method-i-create">#create</a>
+    
+    <li><a href="#method-i-destroy">#destroy</a>
+    
+    <li><a href="#method-i-edit">#edit</a>
+    
+    <li><a href="#method-i-emails_comite">#emails_comite</a>
+    
+    <li><a href="#method-i-envio_email">#envio_email</a>
+    
+    <li><a href="#method-i-index">#index</a>
+    
+    <li><a href="#method-i-new">#new</a>
+    
+    <li><a href="#method-i-show">#show</a>
+    
+    <li><a href="#method-i-update">#update</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./doc/README_FOR_APP.html">README_FOR_APP</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./Ability.html">Ability</a>
+  
+    <li><a href="./Acta.html">Acta</a>
+  
+    <li><a href="./ActaList.html">ActaList</a>
+  
+    <li><a href="./ActasController.html">ActasController</a>
+  
+    <li><a href="./ActasHelper.html">ActasHelper</a>
+  
+    <li><a href="./ApplicationController.html">ApplicationController</a>
+  
+    <li><a href="./ApplicationHelper.html">ApplicationHelper</a>
+  
+    <li><a href="./AprendicesController.html">AprendicesController</a>
+  
+    <li><a href="./AprendicesHelper.html">AprendicesHelper</a>
+  
+    <li><a href="./Aprendiz.html">Aprendiz</a>
+  
+    <li><a href="./Asignacioncomite.html">Asignacioncomite</a>
+  
+    <li><a href="./AsignacioncomitesController.html">AsignacioncomitesController</a>
+  
+    <li><a href="./AsignacioncomitesHelper.html">AsignacioncomitesHelper</a>
+  
+    <li><a href="./Ayuda.html">Ayuda</a>
+  
+    <li><a href="./AyudasController.html">AyudasController</a>
+  
+    <li><a href="./Cancelacion.html">Cancelacion</a>
+  
+    <li><a href="./Centro.html">Centro</a>
+  
+    <li><a href="./CentrosController.html">CentrosController</a>
+  
+    <li><a href="./CentrosHelper.html">CentrosHelper</a>
+  
+    <li><a href="./CitacionList.html">CitacionList</a>
+  
+    <li><a href="./Comite.html">Comite</a>
+  
+    <li><a href="./ComiteList.html">ComiteList</a>
+  
+    <li><a href="./ComiteMailer.html">ComiteMailer</a>
+  
+    <li><a href="./ComitesController.html">ComitesController</a>
+  
+    <li><a href="./ComitesHelper.html">ComitesHelper</a>
+  
+    <li><a href="./CommitteeMembers.html">CommitteeMembers</a>
+  
+    <li><a href="./CommitteesMembersController.html">CommitteesMembersController</a>
+  
+    <li><a href="./CommitteesMembersHelper.html">CommitteesMembersHelper</a>
+  
+    <li><a href="./Condicionamiento.html">Condicionamiento</a>
+  
+    <li><a href="./Configuracion.html">Configuracion</a>
+  
+    <li><a href="./ConfiguracionesController.html">ConfiguracionesController</a>
+  
+    <li><a href="./ConfiguracionesHelper.html">ConfiguracionesHelper</a>
+  
+    <li><a href="./Coordinador.html">Coordinador</a>
+  
+    <li><a href="./CoordinadoresController.html">CoordinadoresController</a>
+  
+    <li><a href="./CoordinadoresHelper.html">CoordinadoresHelper</a>
+  
+    <li><a href="./Estado.html">Estado</a>
+  
+    <li><a href="./EstadosController.html">EstadosController</a>
+  
+    <li><a href="./EstadosHelper.html">EstadosHelper</a>
+  
+    <li><a href="./Fcomite.html">Fcomite</a>
+  
+    <li><a href="./FcomitesController.html">FcomitesController</a>
+  
+    <li><a href="./FcomitesHelper.html">FcomitesHelper</a>
+  
+    <li><a href="./Historia.html">Historia</a>
+  
+    <li><a href="./HistoriasController.html">HistoriasController</a>
+  
+    <li><a href="./HistoriasHelper.html">HistoriasHelper</a>
+  
+    <li><a href="./InicioController.html">InicioController</a>
+  
+    <li><a href="./InicioHelper.html">InicioHelper</a>
+  
+    <li><a href="./Instructor.html">Instructor</a>
+  
+    <li><a href="./InstructorMailer.html">InstructorMailer</a>
+  
+    <li><a href="./InstructoresController.html">InstructoresController</a>
+  
+    <li><a href="./InstructoresHelper.html">InstructoresHelper</a>
+  
+    <li><a href="./LlamadoAtencion.html">LlamadoAtencion</a>
+  
+    <li><a href="./Object.html">Object</a>
+  
+    <li><a href="./Programa.html">Programa</a>
+  
+    <li><a href="./ProgramasController.html">ProgramasController</a>
+  
+    <li><a href="./ProgramasHelper.html">ProgramasHelper</a>
+  
+    <li><a href="./Queja.html">Queja</a>
+  
+    <li><a href="./QuejaList.html">QuejaList</a>
+  
+    <li><a href="./QuejaMailer.html">QuejaMailer</a>
+  
+    <li><a href="./QuejasController.html">QuejasController</a>
+  
+    <li><a href="./QuejasHelper.html">QuejasHelper</a>
+  
+    <li><a href="./Role.html">Role</a>
+  
+    <li><a href="./RolesController.html">RolesController</a>
+  
+    <li><a href="./RolesHelper.html">RolesHelper</a>
+  
+    <li><a href="./SessionsController.html">SessionsController</a>
+  
+    <li><a href="./SessionsHelper.html">SessionsHelper</a>
+  
+    <li><a href="./TipoDocumento.html">TipoDocumento</a>
+  
+    <li><a href="./TiposDocumentosController.html">TiposDocumentosController</a>
+  
+    <li><a href="./TiposDocumentosHelper.html">TiposDocumentosHelper</a>
+  
+    <li><a href="./User.html">User</a>
+  
+    <li><a href="./UserList.html">UserList</a>
+  
+    <li><a href="./UserRole.html">UserRole</a>
+  
+    <li><a href="./Usercomite.html">Usercomite</a>
+  
+    <li><a href="./UsercomiteList.html">UsercomiteList</a>
+  
+    <li><a href="./UsercomiteMailer.html">UsercomiteMailer</a>
+  
+    <li><a href="./UsercomitesController.html">UsercomitesController</a>
+  
+    <li><a href="./UsercomitesHelper.html">UsercomitesHelper</a>
+  
+    <li><a href="./UsersController.html">UsersController</a>
+  
+    <li><a href="./UsersHelper.html">UsersHelper</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class ComitesController</h1>
+
+  <div id="description" class="description">
+    
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-asignar_userc" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">asignar_userc</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <h2 id="method-i-asignar_userc-label-En+este+metodo+se+guardan+los+registros+de+los+usuarios%2C+en+el+comite+al+que+fueron+asignados">En este metodo se guardan los registros de los usuarios, en el comite al que fueron asignados</h2>
+          
+
+          
+          <div class="method-source-code" id="asignar_userc-source">
+            <pre><span class="ruby-comment"># File app/controllers/comites_controller.rb, line 134</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">asignar_userc</span>
+ 
+  <span class="ruby-ivar">@fcomite</span> = <span class="ruby-constant">Fcomite</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:fcomite_id</span>])
+  <span class="ruby-ivar">@comite_id</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:comite_id</span>]
+  <span class="ruby-ivar">@nombres</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:names</span>]
+  <span class="ruby-ivar">@emails</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:emails</span>]
+  <span class="ruby-constant">Usercomite</span>.<span class="ruby-identifier">create</span>(<span class="ruby-value">:nombre</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@nombres</span>, <span class="ruby-value">:emails</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@emails</span>,<span class="ruby-value">:comite_id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@comite_id</span>)
+  <span class="ruby-ivar">@comites</span> = <span class="ruby-constant">Comite</span>.<span class="ruby-identifier">all</span>
+  <span class="ruby-identifier">redirect_to</span> <span class="ruby-identifier">fcomite_comites_path</span>(<span class="ruby-ivar">@fcomite</span>.<span class="ruby-identifier">id</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- asignar_userc-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- asignar_userc-method -->
+
+    
+      <div id="method-i-crear_acta" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">crear_acta</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <h3 id="method-i-crear_acta-label-En+este+metodo+se+crea+el+acta%2C+para+cada+hora+asignada+">En este metodo se crea el acta, para cada hora asignada </h3>
+          
+
+          
+          <div class="method-source-code" id="crear_acta-source">
+            <pre><span class="ruby-comment"># File app/controllers/comites_controller.rb, line 146</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">crear_acta</span>
+  <span class="ruby-ivar">@comite_id</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:comite_id</span>]
+  <span class="ruby-ivar">@hora_inicio</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:hora_inicio</span>]
+  <span class="ruby-ivar">@hora_final</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:hora_terminacion</span>]
+  <span class="ruby-ivar">@objetivo_reunion</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:objetivo_de_la_reunion</span>]
+  <span class="ruby-ivar">@desarrollo_reunion</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:desarrollo_reunion</span>]
+  <span class="ruby-ivar">@conclusiones</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:conclusiones</span>]
+  <span class="ruby-ivar">@subdirector</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:subdirector</span>]
+  <span class="ruby-ivar">@comite</span> = <span class="ruby-constant">Comite</span>.<span class="ruby-identifier">find</span>(<span class="ruby-ivar">@comite_id</span>)
+  <span class="ruby-ivar">@fcomite</span> = <span class="ruby-constant">Fcomite</span>.<span class="ruby-identifier">find</span>(<span class="ruby-ivar">@comite</span>.<span class="ruby-identifier">fcomite_id</span>)
+  <span class="ruby-ivar">@fecha_creacion</span> = <span class="ruby-constant">Time</span>.<span class="ruby-identifier">now</span>.<span class="ruby-identifier">strftime</span>(<span class="ruby-string">&quot;%Y-%m-%d&quot;</span>)
+
+  <span class="ruby-ivar">@num_acta</span> = <span class="ruby-constant">Acta</span>.<span class="ruby-identifier">numero_acta</span>
+  <span class="ruby-ivar">@acta</span> = <span class="ruby-constant">Acta</span>.<span class="ruby-identifier">create</span>(<span class="ruby-value">:num_acta</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@num_acta</span>, <span class="ruby-value">:fecha_creacion</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@fecha_creacion</span>,<span class="ruby-value">:subdirector</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@subdirector</span>, <span class="ruby-value">:configuracion_id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">1</span>, <span class="ruby-value">:fecha</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@fcomite</span>.<span class="ruby-identifier">fecha</span>,<span class="ruby-value">:comite_id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@comite_id</span>, <span class="ruby-value">:hora_inicio</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@hora_inicio</span>, <span class="ruby-value">:hora_terminacion</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@hora_final</span>, <span class="ruby-value">:objetivo_de_la_reunion</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@objetivo_reunion</span>, <span class="ruby-value">:desarrollo_reunion</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@desarrollo_reunion</span>, <span class="ruby-value">:conclusiones</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@conclusiones</span>)
+  <span class="ruby-constant">Comite</span>.<span class="ruby-identifier">acta_historia</span>(<span class="ruby-ivar">@acta</span>)
+
+  <span class="ruby-identifier">redirect_to</span> <span class="ruby-identifier">fcomite_comites_path</span>(<span class="ruby-ivar">@fcomite</span>.<span class="ruby-identifier">id</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- crear_acta-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- crear_acta-method -->
+
+    
+      <div id="method-i-create" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">create</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="create-source">
+            <pre><span class="ruby-comment"># File app/controllers/comites_controller.rb, line 62</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">create</span>
+  <span class="ruby-ivar">@comite</span> = <span class="ruby-ivar">@fcomite</span>.<span class="ruby-identifier">comites</span>.<span class="ruby-identifier">build</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:comite</span>])
+  <span class="ruby-identifier">render</span> <span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:new</span> <span class="ruby-keyword">unless</span> <span class="ruby-ivar">@comite</span>.<span class="ruby-identifier">save</span>
+  <span class="ruby-ivar">@comites</span> = <span class="ruby-constant">Comite</span>.<span class="ruby-identifier">all</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- create-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- create-method -->
+
+    
+      <div id="method-i-destroy" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">destroy</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="destroy-source">
+            <pre><span class="ruby-comment"># File app/controllers/comites_controller.rb, line 96</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">destroy</span>
+  <span class="ruby-ivar">@comite</span> = <span class="ruby-constant">Comite</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>])
+  <span class="ruby-ivar">@comite</span>.<span class="ruby-identifier">destroy</span>
+  <span class="ruby-ivar">@comites</span> = <span class="ruby-constant">Comite</span>.<span class="ruby-identifier">all</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- destroy-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- destroy-method -->
+
+    
+      <div id="method-i-edit" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">edit</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="edit-source">
+            <pre><span class="ruby-comment"># File app/controllers/comites_controller.rb, line 57</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">edit</span>
+ 
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- edit-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- edit-method -->
+
+    
+      <div id="method-i-emails_comite" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">emails_comite</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <h2 id="method-i-emails_comite-label-En+este+metodo+se+recuperan+los+nombres+y+los+emails+de+los+usuarios+en+la+db+para+mostrarlos+en+el+formulario+de+asignaci%C3%B3n+de+usuarios">En este metodo se recuperan los nombres y los emails de los usuarios en la db para mostrarlos en el formulario de asignación de usuarios</h2>
+          
+
+          
+          <div class="method-source-code" id="emails_comite-source">
+            <pre><span class="ruby-comment"># File app/controllers/comites_controller.rb, line 102</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">emails_comite</span>
+  <span class="ruby-ivar">@committee_members_id</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:committee_members_id</span>]
+  <span class="ruby-ivar">@usersname</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:names</span>]
+  <span class="ruby-ivar">@instructorid</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:instructor_id</span>]
+  <span class="ruby-ivar">@email</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:email</span>]
+  <span class="ruby-keyword">if</span> <span class="ruby-ivar">@committee_members_id</span> <span class="ruby-operator">!=</span> <span class="ruby-string">&quot;&quot;</span> <span class="ruby-keyword">and</span> <span class="ruby-ivar">@email</span> <span class="ruby-operator">==</span> <span class="ruby-string">&quot;&quot;</span>
+    <span class="ruby-ivar">@committee_member</span> = <span class="ruby-constant">CommitteeMembers</span>.<span class="ruby-identifier">find</span>(<span class="ruby-ivar">@committee_members_id</span>)
+    <span class="ruby-ivar">@names</span>  = <span class="ruby-ivar">@committee_member</span>.<span class="ruby-identifier">name</span> 
+    <span class="ruby-ivar">@emails</span> = <span class="ruby-ivar">@committee_member</span>.<span class="ruby-identifier">email</span>
+  <span class="ruby-keyword">elsif</span> <span class="ruby-ivar">@email</span> <span class="ruby-keyword">and</span> <span class="ruby-ivar">@committee_members_id</span> <span class="ruby-operator">!=</span> <span class="ruby-string">&quot;&quot;</span>
+    <span class="ruby-ivar">@committee_member</span> = <span class="ruby-constant">CommitteeMembers</span>.<span class="ruby-identifier">find</span>(<span class="ruby-ivar">@committee_members_id</span>)
+    <span class="ruby-ivar">@names</span>  =  <span class="ruby-ivar">@usersname</span> <span class="ruby-operator">+</span> <span class="ruby-node">&quot;,#{@committee_member.name}&quot;</span>
+    <span class="ruby-ivar">@emails</span> =  <span class="ruby-ivar">@email</span> <span class="ruby-operator">+</span> <span class="ruby-node">&quot;,#{@committee_member.email}&quot;</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-keyword">if</span> <span class="ruby-ivar">@instructorid</span> <span class="ruby-operator">!=</span> <span class="ruby-string">&quot;&quot;</span> <span class="ruby-keyword">and</span> <span class="ruby-ivar">@email</span> <span class="ruby-operator">==</span> <span class="ruby-string">&quot;&quot;</span>
+    <span class="ruby-ivar">@instructor</span> = <span class="ruby-constant">Instructor</span>.<span class="ruby-identifier">find</span>(<span class="ruby-ivar">@instructorid</span>)
+    <span class="ruby-ivar">@names</span>  = <span class="ruby-ivar">@instructor</span>.<span class="ruby-identifier">nombres</span> 
+    <span class="ruby-ivar">@emails</span> = <span class="ruby-ivar">@instructor</span>.<span class="ruby-identifier">email</span>
+  <span class="ruby-keyword">elsif</span> <span class="ruby-ivar">@email</span> <span class="ruby-keyword">and</span>  <span class="ruby-ivar">@instructorid</span> <span class="ruby-operator">!=</span> <span class="ruby-string">&quot;&quot;</span>
+    <span class="ruby-ivar">@instructor</span> = <span class="ruby-constant">Instructor</span>.<span class="ruby-identifier">find</span>(<span class="ruby-ivar">@instructorid</span>)
+    <span class="ruby-ivar">@names</span>  =  <span class="ruby-ivar">@usersname</span> <span class="ruby-operator">+</span> <span class="ruby-node">&quot;,#{@instructor.nombres}&quot;</span>
+    <span class="ruby-ivar">@emails</span> =  <span class="ruby-ivar">@email</span> <span class="ruby-operator">+</span> <span class="ruby-node">&quot;,#{@instructor.email}&quot;</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">format</span>.<span class="ruby-identifier">js</span> { <span class="ruby-identifier">render</span> <span class="ruby-string">&#39;emails&#39;</span> } <span class="ruby-comment">#cal_cost.js.erb</span>
+  <span class="ruby-keyword">end</span>
+  
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- emails_comite-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- emails_comite-method -->
+
+    
+      <div id="method-i-envio_email" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">envio_email</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <h3 id="method-i-envio_email-label-M%C3%A9todo+para+el+env%C3%ADo+de+email+con+el+mailer+de+rails%2C+para+el+aprendiz+y+los+usuarios+del++comite">Método para el envío de email con el mailer de rails, para el aprendiz y los usuarios del  comite</h3>
+          
+
+          
+          <div class="method-source-code" id="envio_email-source">
+            <pre><span class="ruby-comment"># File app/controllers/comites_controller.rb, line 69</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">envio_email</span>
+  <span class="ruby-comment">#datos para envio de email a los miembros del comite y variables para anexar el pdf a el email</span>
+  <span class="ruby-ivar">@fcomite</span> = <span class="ruby-constant">Fcomite</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:fcomite_id</span>])
+  <span class="ruby-ivar">@comitespdf</span> = <span class="ruby-constant">Comite</span>.<span class="ruby-identifier">where</span>(<span class="ruby-value">:fcomite_id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:fcomite_id</span>])
+  <span class="ruby-comment">#email miembros comite</span>
+  <span class="ruby-ivar">@comitespdf</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">detalle_comite</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">quejaid</span> =  <span class="ruby-identifier">detalle_comite</span>.<span class="ruby-identifier">quejaid</span>
+    <span class="ruby-ivar">@comitea</span> = <span class="ruby-constant">Comite</span>.<span class="ruby-identifier">find_by_quejaid</span>(<span class="ruby-identifier">quejaid</span>)
+    <span class="ruby-ivar">@queja</span> = <span class="ruby-constant">Queja</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">quejaid</span>)
+    <span class="ruby-constant">ComiteMailer</span>.<span class="ruby-identifier">citacion_aprendiz</span>(<span class="ruby-ivar">@queja</span>,<span class="ruby-ivar">@comitea</span>,<span class="ruby-string">&quot;Citacion Comite Evaluacion y Seguimiento&quot;</span>).<span class="ruby-identifier">deliver</span>
+
+    <span class="ruby-ivar">@usercomite</span> = <span class="ruby-constant">Usercomite</span>.<span class="ruby-identifier">find_by_comite_id</span>(<span class="ruby-ivar">@comitea</span>.<span class="ruby-identifier">id</span>)
+    <span class="ruby-ivar">@emailusercom</span> = <span class="ruby-constant">Comite</span>.<span class="ruby-identifier">emails</span>(<span class="ruby-ivar">@usercomite</span>.<span class="ruby-identifier">emails</span>)
+    <span class="ruby-constant">ComiteMailer</span>.<span class="ruby-identifier">usercomite_programacion</span>(<span class="ruby-ivar">@fcomite</span>, <span class="ruby-ivar">@comitespdf</span>, <span class="ruby-ivar">@emailusercom</span>, <span class="ruby-string">&quot;notificacion de la queja&quot;</span> ).<span class="ruby-identifier">deliver</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> { <span class="ruby-identifier">redirect_to</span> <span class="ruby-identifier">fcomite_comites_path</span>(<span class="ruby-ivar">@fcomite</span>.<span class="ruby-identifier">id</span>) }
+    <span class="ruby-identifier">format</span>.<span class="ruby-identifier">js</span> { <span class="ruby-identifier">render</span> <span class="ruby-string">&#39;comites/envio_email&#39;</span> }
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- envio_email-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- envio_email-method -->
+
+    
+      <div id="method-i-index" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">index</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="index-source">
+            <pre><span class="ruby-comment"># File app/controllers/comites_controller.rb, line 7</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">index</span>
+ 
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:search</span>]
+    <span class="ruby-ivar">@searc</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:search</span>]
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-ivar">@searc</span> = <span class="ruby-string">&quot;&quot;</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-comment">#buscador</span>
+  <span class="ruby-ivar">@comites</span>  = <span class="ruby-ivar">@fcomite</span>.<span class="ruby-identifier">comites</span>.<span class="ruby-identifier">order</span>(<span class="ruby-identifier">sort_column</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot; &quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">sort_direction</span>).<span class="ruby-identifier">search</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:search</span>]).<span class="ruby-identifier">page</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:page</span>]).<span class="ruby-identifier">per_page</span>(<span class="ruby-value">5</span>)
+  <span class="ruby-comment">#esta variable trae todos los registros para el pdf</span>
+  <span class="ruby-ivar">@a</span> = <span class="ruby-ivar">@fcomite</span>.<span class="ruby-identifier">comites</span>.<span class="ruby-identifier">order</span>(<span class="ruby-string">&quot;hora&quot;</span>)
+  <span class="ruby-ivar">@fcomite</span> = <span class="ruby-constant">Fcomite</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:fcomite_id</span>])
+  <span class="ruby-identifier">output</span> = <span class="ruby-constant">ComiteList</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@a</span>,<span class="ruby-ivar">@fcomite</span>,<span class="ruby-identifier">view_context</span>) <span class="ruby-comment"># Aquí instancio el documento pdf</span>
+
+  <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">format</span>.<span class="ruby-identifier">pdf</span>{
+     <span class="ruby-identifier">send_data</span> <span class="ruby-identifier">output</span>.<span class="ruby-identifier">render</span>, <span class="ruby-value">:filename</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;programacion_comite.pdf&quot;</span>, <span class="ruby-value">:type</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;application/pdf&quot;</span>, 
+      <span class="ruby-value">:disposition</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;inline&quot;</span> <span class="ruby-comment"># este parámetro permite ver el documento pdf en linea.</span>
+    }
+    <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> <span class="ruby-comment">#{ render :text =&gt; &quot;&lt;h1&gt;Use .pdf&lt;/h1&gt;&quot;.html_safe }</span>
+    <span class="ruby-identifier">format</span>.<span class="ruby-identifier">json</span> { <span class="ruby-identifier">render</span> <span class="ruby-identifier">json</span><span class="ruby-operator">:</span> <span class="ruby-ivar">@comites</span>  }
+  <span class="ruby-keyword">end</span>
+
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- index-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- index-method -->
+
+    
+      <div id="method-i-new" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">new</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="new-source">
+            <pre><span class="ruby-comment"># File app/controllers/comites_controller.rb, line 52</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">new</span>
+  <span class="ruby-ivar">@comite</span> = <span class="ruby-constant">Comite</span>.<span class="ruby-identifier">new</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- new-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- new-method -->
+
+    
+      <div id="method-i-show" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">show</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <h3 id="method-i-show-label-Este+m%C3%A9todo+es+utilizado++para+el+pdf+de+citaci%C3%B3n+">Este método es utilizado  para el pdf de citación </h3>
+          
+
+          
+          <div class="method-source-code" id="show-source">
+            <pre><span class="ruby-comment"># File app/controllers/comites_controller.rb, line 34</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">show</span>
+
+ 
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:format</span>] <span class="ruby-operator">==</span> <span class="ruby-string">&quot;pdf&quot;</span>
+    <span class="ruby-ivar">@queja</span> = <span class="ruby-constant">Queja</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:qid</span>])
+    <span class="ruby-ivar">@fechaes</span>, <span class="ruby-ivar">@año</span> = <span class="ruby-constant">Comite</span>.<span class="ruby-identifier">fechaes</span>
+    <span class="ruby-identifier">output</span> = <span class="ruby-constant">CitacionList</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@queja</span>,<span class="ruby-ivar">@comite</span>,<span class="ruby-ivar">@fechaes</span>,<span class="ruby-ivar">@año</span>,<span class="ruby-identifier">view_context</span>) <span class="ruby-comment"># Aquí instancio el documento pdf</span>
+    <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+      <span class="ruby-identifier">format</span>.<span class="ruby-identifier">pdf</span>{
+        <span class="ruby-identifier">send_data</span> <span class="ruby-identifier">output</span>.<span class="ruby-identifier">render</span>, <span class="ruby-value">:filename</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;citacion.pdf&quot;</span>, <span class="ruby-value">:type</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;application/pdf&quot;</span>, 
+        <span class="ruby-value">:disposition</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;inline&quot;</span> <span class="ruby-comment"># este parámetro permite ver el documento pdf en linea.</span>
+      }
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+ 
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- show-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- show-method -->
+
+    
+      <div id="method-i-update" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">update</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="update-source">
+            <pre><span class="ruby-comment"># File app/controllers/comites_controller.rb, line 91</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">update</span>
+  <span class="ruby-identifier">render</span> <span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:edit</span> <span class="ruby-keyword">unless</span> <span class="ruby-ivar">@comite</span>.<span class="ruby-identifier">update_attributes</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:comite</span>])
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- update-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- update-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.2.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

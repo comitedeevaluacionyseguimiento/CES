@@ -1,0 +1,49 @@
+<%- model_class = User -%>
+<div class="buscador">
+  <div class="row-fluid">
+    <div class="row-fluid">
+      <div class="span6">
+        <%= form_tag request.path, :class=>"form-search", :method => 'get' do %>
+          <%= content_tag :label do %>
+            <h2>Buscador</h2>
+            <div class="input-append" id='efecto1'>
+               <%= text_field_tag :search, params[:search], :id=>'efecto1', :class=>" input-medium search-query search" %>
+               <%= submit_tag "Buscar", :nombre => nil,:num_document => nil, :class=>"btn btn-info disable"%>
+            </div>
+          <% end %>
+        <% end %>
+        <div class="span6">
+          </div>
+      </div>
+      <div class=" colorp">
+        <h2>Usuarios</h2>
+          <p>
+            Total Usuarios : <%= @users.count %>
+          </p>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<table class="table table-bordered table-hover pretty">
+  <thead>
+    <tr>  
+      <th><%= sortable "nombre" %></th>
+      <th><%= sortable "username" %></th> 
+      <th><%= sortable "email" %></th>
+      <th><%= sortable "created_at" %></th> 
+      <th>Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <%= render @users %>
+  </tbody>
+</table>
+<%= link_to 'Nuevo usuario', new_user_path, :class => 'btn btn-primary', :remote => true %>
+<%= link_to image_tag("pdf_icon.gif"), users_path(:format => :pdf), :id => "pdfc" %> 
+
+
+<div align="center">
+  <%= will_paginate @users, :previous_label => '&laquo; Anterior', :next_label => 'Siguiente
+  &raquo;' %>
+</div>

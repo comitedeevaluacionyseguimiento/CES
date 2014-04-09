@@ -1,0 +1,42 @@
+<%- model_class = Historia -%>
+<div class="page-header colorp">
+  <h1>Historia de: <%= @aprendiz.name%></h1>
+</div>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Aprendiz</th>
+      <th>Queja</th>
+      <th>Comite</th>
+      <th>Programacion Comite</th>
+      <th>Acta</th>
+      <th>Tipo Recomendacion</th>
+      <th>Llamada Atencion</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @historias.each do |historia| %>
+      <tr>
+        <td><%= historia.aprendiz.name %></td>
+        <td><%= link_to 'Mostrar', queja_path(historia.queja_id), :remote => true, :class => 'btn btn-mini btn-default' %></td>
+        <td><%= link_to 'Mostrar', fcomite_path(historia.comite.fcomite_id), :remote => true, :class => 'btn btn-mini btn-default' %></td>
+        <td><%= link_to 'Mostrar', fcomite_comite_path(historia.comite.fcomite_id,historia.comite_id), :remote => true, :class => 'btn btn-mini btn-default' %></td>
+        <% if historia.acta_id != nil%>
+        <td><%= link_to 'Mostrar', acta_path(historia.acta_id), :remote => true, :class => 'btn btn-mini btn-default' %></td>
+        <% end %>
+        <% if !historia.tipo_recomendacion %>
+          <td>No se ha generado </td>
+        <% else %>
+          <td><%= historia.tipo_recomendacion %></td>
+        <% end %>
+
+        <% if !historia.llamada_atencion %>
+          <td>No se ha generado </td>
+        <% else %>
+          <td><%= historia.llamada_atencion %></td>
+        <% end %>
+    <% end %>
+  </tbody>
+</table>
+<%= link_to "Atras", aprendices_path,:class => "btn btn-mini btn-info"%>
+ 

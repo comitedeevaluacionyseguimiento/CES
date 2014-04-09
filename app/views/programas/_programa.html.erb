@@ -1,0 +1,19 @@
+<tr class="success" id=<%= "programa_#{programa.id}" %>>
+  
+  <td><%= programa.id %></td>
+  <td><%= programa.descripcion %></td>
+  <td><%= programa.abreviatura %></td>
+ 
+  <td><%= programa.coordinador.centro.abreviatura %></td>
+  <td><%= programa.estado %></td>
+  <td>
+    <%= link_to 'Mostrar', centro_coordinador_programa_path(@centro,@coordinador,programa), :remote => true, :class => 'btn btn-mini btn-info' %>
+    <% if has_role == "admin" %>
+      <%= link_to 'Editar', edit_centro_coordinador_programa_path(@centro,@coordinador,programa), :remote => true,
+        :class => 'btn btn-mini btn-warning' %>
+      <%= link_to 'Eliminar', centro_coordinador_programa_path(@centro,@coordinador,programa), 
+        :data => { :confirm => 'Esta Seguro?' },
+        :method => :delete, :remote => true, :class => 'btn btn-mini btn-danger' %>
+    <% end %>
+  </td>
+</tr>

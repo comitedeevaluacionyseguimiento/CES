@@ -1,0 +1,51 @@
+<%- model_class = Acta -%>
+
+<div class="buscador">
+    <div class="row-fluid">
+      <div class="row-fluid">
+        <div class="span6">
+          <%= form_tag request.path,:class=>"form-search", :method => 'get' do %>
+            <%= content_tag :label do %>
+              <h2>Buscador</h2>
+            <div class="input-append" id='efecto1'>
+              <%= text_field_tag :search, params[:search],:class =>" input-medium search-query search" %>
+              <%= submit_tag "Consultar", :fecha => nil, :class=>"btn btn-info disable" %>
+            </div>
+            <% end %>
+          <% end %>
+
+          <div class="span6">
+          </div>
+        </div>
+        <div class="colorp">
+          <h1>Actas</h1>
+        
+          <p>
+           Total Actas: <%= @actas.total_entries %>
+          </p>
+        </div>
+      </div>
+  </div>
+</div>
+<br>
+<table class="table table-bordered table-hover pretty">
+  <thead>
+    <tr>  
+      <th><%= sortable "id" %></th> 
+      <th><%= sortable "fecha" %></th>
+      <th><%= sortable "hora_inicio" %></th> 
+      <th><%= sortable "hora_terminacion" %></th> 
+      <th>Nombre Aprendices</th>
+      <th>Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <%= render @actas %>
+  </tbody>
+</table>
+
+<div align="center">
+  <%= will_paginate @actas, :previous_label => '&laquo; Anterior', :next_label => 'Siguiente
+  &raquo;' %>
+</div>
+

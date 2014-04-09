@@ -1,0 +1,12 @@
+<%- model_class = Programa -%>
+
+<h1><%=t '.title', :default => model_class.model_name.human %></h1>
+
+
+<div class='programa'>
+  <p>Descripcion: <%= @programa.descripcion %></p>
+  <p>Abreviatura: <%= @programa.abreviatura %></p>
+ 
+  <p>estado: <%= @programa.estado %></p>
+  <p>Centro: <%= @programa.coordinador.centro.abreviatura %></p>
+</div>

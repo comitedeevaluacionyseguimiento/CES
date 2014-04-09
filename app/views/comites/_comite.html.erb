@@ -1,0 +1,58 @@
+<tr id=<%= "comite_#{comite.id}" %>>
+  
+  <td><%= comite.hora %></td>
+  <td><%= comite.nombreapren %></td>
+  <td><%= comite.programa.abreviatura %></td>
+  <td><%= comite.ficha %></td>
+  <% @idsq = qpdf(comite.id) %>
+  <td>
+    <% if has_role == "admin" %>
+      <div class="btn-group">
+        <button class="btn">Usuarios Comite</button>
+        <button class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+          <li>
+            <%= link_to 'Lista de Miembros de Comite', fcomite_comite_usercomites_path(@fcomite,comite) %>
+          </li>
+
+          <li>
+            <%= link_to 'Ingresar Miembros para Comite', userc_path(:fcomite_id => comite.fcomite_id, :comite_id => comite.id),:remote => true %>
+          </li>
+
+        </ul>
+      </div>
+    <% end %>
+  
+    
+    <div class="btn-group">
+       <button class="btn">Opciones</button>
+      <button class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+     
+        <li><%= link_to 'Mostrar', fcomite_comite_path(@fcomite,comite), :remote => true %></li>
+        <% if has_role == "admin" %>
+          <li><%= link_to 'Editar', edit_fcomite_comite_path(@fcomite,comite), :remote => true %></li>
+          <li><%= link_to "Acta", cracta_path(:comite_id => comite.id), :remote => true%></li>
+        <% end %>
+      </ul>
+    </div>
+   <div class="btn-group">
+      <button class="btn">Citacion</button>
+      <button class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+        <% @idsq.each do |id| %>
+          <li><%= link_to(fcomite_comite_path(@fcomite,comite,:qid => id,:format => "pdf"),:target => "_blank") do %><%= @nombres = name(id)%><%= image_tag("pdf_icon.gif")%>
+              <% end %> 
+          </li>
+          
+        <% end %> 
+      </ul>
+    </div>
+  </td>
+</tr>

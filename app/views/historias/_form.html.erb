@@ -1,0 +1,13 @@
+<%= simple_form_for([@aprendiz,@historia], :html => { :class => 'form-horizontal' }) do |f| %>
+  <%= f.input :aprendiz_id %>
+  <%= f.input :queja_id %>
+  <%= f.input :comite_id %>
+  <%= f.input :acta_id %>
+  <%= f.input :tipo_recomendacion %>
+  <%= f.input :llamada_atencion %>
+  <div class="form-actions">
+    <%= f.button :submit, :class => 'btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                aprendiz_historias_path, :class => 'btn' %>
+  </div>
+<% end %>

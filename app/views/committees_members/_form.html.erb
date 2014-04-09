@@ -1,0 +1,9 @@
+<%= simple_form_for @committee_members, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :name %>
+  <%= f.input :email %>
+  <div class="form-actions">
+    <%= f.button :submit, :class => 'btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                committees_members_path, :class => 'btn' %>
+  </div>
+<% end %>

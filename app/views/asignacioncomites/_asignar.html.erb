@@ -1,0 +1,24 @@
+<%= javascript_include_tag "upprograma.js" %>
+<div class="responsive asignar_programacion">
+    <div class="modal-body ">  
+      
+      	<p>
+	        <label class="control-label">Fecha del Comite</label>
+
+            <div class="controls fcomite" >
+                <%= collection_select :fcomite_id, params[:fcomite_id], @fcomite_estado, :id, :fecha, :prompt => "Seleccione", :id=>'efecto1', :class => "fcomite" %>
+            </div>
+
+            <label class="control-label">Seleccione Coordinador</label>
+
+            <div class="controls coordinador" >
+                <%= collection_select :coordinador_id, params[:coordinador_id], Coordinador.all, :id, :nombre, :prompt => "Seleccione coordinador", :id=>'efecto1', :class => "fcomite", :class => "coordinador" %>
+            </div>
+            
+            <div  id="programas">
+	            <%= render :partial => 'programas', :object => @programas %>
+            </div>
+        </p> 
+
+    </div>
+</div>

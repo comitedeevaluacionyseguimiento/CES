@@ -1,0 +1,57 @@
+<%= javascript_include_tag "fecha.js" %>
+<%- model_class = Comite -%>
+<div class="buscador">
+  <div class="row-fluid">
+    <div class="row-fluid">
+      <div class="span6">
+        <%= form_tag request.path, :class => "form-search", :method => 'get' do %>
+          <%= content_tag :label do %>
+            <br/>
+            <br/>
+            <div class="input-append" id='efecto1'>
+              <%= text_field_tag :search, params[:search], :class => "input-medium search-query search"%>
+              <%= submit_tag "Buscar", :hora => nil,:class=>"btn btn-info disable"  %>
+            </div>
+          <% end %>
+        <% end %>
+      </div>
+      <div class=" colorp">
+          
+        <h4>Programacion Comite</h4>
+      
+        <p>
+          Total comites : <%= @comites.count %>
+        </p>
+
+      </div>
+    </div>
+  </div>
+</div>  
+<br>
+<table class="table table-bordered table-hover pretty">
+  <thead>
+    <tr>  
+      <th><%= sortable "hora" %></th> 
+      <th><%= sortable "nombreapren" %></th> 
+      <th><%= sortable "programa_id" %></th> 
+      <th><%= sortable "ficha" %></th> 
+      <th>Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <%= render @comites %>
+  </tbody>
+</table>
+
+<%= link_to image_tag("pdf_icon.gif"), fcomite_comites_path(:format => :pdf),:target => "_blank" %>
+<%= link_to 'Atras', fcomites_path, :class => 'btn btn-primary btn-mini' %>
+
+<% if has_role == "admin" %>
+  <%= link_to  "Enviar Programación para Comité", envio_email_path(:fcomite_id => @fcomite), :class => 'btn  btn-info btn-mini submit' %>
+<% end %>
+
+<div align="center">
+  <%= will_paginate @comites, :previous_label => '&laquo; Anterior', :next_label => 'Siguiente
+  &raquo;' %>
+</div>
+

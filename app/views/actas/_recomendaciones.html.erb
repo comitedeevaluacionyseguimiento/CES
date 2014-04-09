@@ -1,0 +1,42 @@
+<div class="btn-group">
+  <button class="btn">Condicionamiento M</button>
+  <button class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+    <span class="caret"></span>
+  </button>
+  <% @id = vpdf(params[:acta_id])%>
+  <ul class="dropdown-menu">
+    <% @id.each do |id| %>
+      <li><%= link_to(pdf_condicionamiento_path(:id => params[:acta_id],:idq => id, :format => "pdf"),:target => "_blank") do %><%= @nombres = name(id)%><%= image_tag("pdf_icon.gif")%>
+          <% end %> 
+      </li> 
+      
+    <% end %> 
+  </ul>
+</div>
+<div class="btn-group">
+   <button class="btn">Cancelacion</button>
+  <button class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <% @id.each do |id| %>
+      <li><%= link_to(pdf_cancelacion_path(:id => params[:acta_id],:idq => id, :format => "pdf"),:target => "_blank") do %><%= @nombres = name(id)%><%= image_tag("pdf_icon.gif")%>
+          <% end %> 
+      </li>
+      
+    <% end %> 
+  </ul>
+</div>
+<div class="btn-group">
+   <button class="btn">Lamado de Atencion</button>
+  <button class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <% @id.each do |id| %>
+      <li><%= link_to(pdf_llamado_atencion_path(:id => params[:acta_id],:idq => id, :format => "pdf"),:target => "_blank") do %><%= @nombres = name(id)%><%= image_tag("pdf_icon.gif")%>
+          <% end %> 
+      </li>
+    <% end %> 
+  </ul>
+</div>

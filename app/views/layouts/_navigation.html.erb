@@ -1,0 +1,61 @@
+<ul class="nav nav-pills">
+  <% if current_user %>
+    <li>
+      <%= link_to image_tag('user-home.png',height: '32', width: '32'), root_path, :title => "¿volver al inicio?" %>
+    </li>
+  
+    <% if has_role == "instructor" or  has_role == "admin" or has_role == "coordinador" %>
+
+      <li>
+        <%= link_to('Usuarios', :users) %> 
+      </li>
+
+      <li class="borlink">
+        <%= link_to('Quejas', :quejas) %> 
+      </li>
+
+      <li>
+        <%= link_to('Comites', :fcomites) %> 
+      </li>
+
+      <% end %>  
+    <% if  has_role == "admin" or has_role == "coordinador" %> 
+
+      <li>
+        <%= link_to('Actas', :actas) %> 
+      </li>
+
+      <li>
+        <%= link_to 'Administracion', admin_path, :remote => true %>
+      </li>
+
+      <li>
+        <%= link_to 'Aprendices', :aprendices %>
+      </li>
+    <% end %>
+	<li class="divider-vertical"></li>
+      <li class="dropdown" id="buton">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">-<%= current_user.username.capitalize %><b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><%= link_to(logout_path) do %>
+                salir <i class="icon-briefcase"></i>
+              <% end %>
+            <li class="divider"></li>
+          </li>
+        </ul>
+      </li>		
+  <% end %>
+
+    <% if !current_user %>
+  
+      <li class="divider-vertical"></li>
+
+      <li><a href="#"></a></li>
+     
+      <li><a href="#"></a></li>
+
+      <li class="borlink">
+        <%= link_to 'Ingresar', login_path %>
+      </li>
+    <% end %>
+</ul> 

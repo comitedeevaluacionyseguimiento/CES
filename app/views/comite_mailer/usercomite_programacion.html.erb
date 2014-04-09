@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	</head>
+	<body>
+		<p><%= image_tag attachments['logo-sena.png'].url, :width => "180x130" -%></p>
+
+		<div class="modal-body"> 
+
+		  <h3>Usuario Comite</h3>
+
+		  	<p>Asunto: Comite de Evaluación y Seguimiento
+				 
+				Buenas tardes Estimados Instructores:
+				 
+				Nos permitimos dar a conocer los horarios para el comite que se efectuara <%= @fcomite.fecha %>  de tipo <%= @fcomite.tipo %>
+
+				Como anexo, se envia un archivo pdf con la programacion del mismmo 
+			</p>
+		</div>
+		<footer>
+			<p>Mensaje enviodo por la aplicación  S.C.M  <%= image_tag attachments['scm.png'].url, :width => "150x100" -%> </p>
+		</footer>
+	</body>
+</html>

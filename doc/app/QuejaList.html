@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+<title>class QuejaList - Rails Application Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>app/pdfs/queja_list.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link">Prawn::Document
+  
+</nav>
+
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-c-new">::new</a>
+    
+    <li><a href="#method-i-descripcion">#descripcion</a>
+    
+    <li><a href="#method-i-direccion">#direccion</a>
+    
+    <li><a href="#method-i-fecha">#fecha</a>
+    
+    <li><a href="#method-i-firma">#firma</a>
+    
+    <li><a href="#method-i-info">#info</a>
+    
+    <li><a href="#method-i-logo">#logo</a>
+    
+    <li><a href="#method-i-precision">#precision</a>
+    
+    <li><a href="#method-i-queja">#queja</a>
+    
+    <li><a href="#method-i-queja_details">#queja_details</a>
+    
+    <li><a href="#method-i-testigo">#testigo</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./doc/README_FOR_APP.html">README_FOR_APP</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./Ability.html">Ability</a>
+  
+    <li><a href="./Acta.html">Acta</a>
+  
+    <li><a href="./ActaList.html">ActaList</a>
+  
+    <li><a href="./ActasController.html">ActasController</a>
+  
+    <li><a href="./ActasHelper.html">ActasHelper</a>
+  
+    <li><a href="./ApplicationController.html">ApplicationController</a>
+  
+    <li><a href="./ApplicationHelper.html">ApplicationHelper</a>
+  
+    <li><a href="./AprendicesController.html">AprendicesController</a>
+  
+    <li><a href="./AprendicesHelper.html">AprendicesHelper</a>
+  
+    <li><a href="./Aprendiz.html">Aprendiz</a>
+  
+    <li><a href="./Asignacioncomite.html">Asignacioncomite</a>
+  
+    <li><a href="./AsignacioncomitesController.html">AsignacioncomitesController</a>
+  
+    <li><a href="./AsignacioncomitesHelper.html">AsignacioncomitesHelper</a>
+  
+    <li><a href="./Ayuda.html">Ayuda</a>
+  
+    <li><a href="./AyudasController.html">AyudasController</a>
+  
+    <li><a href="./Cancelacion.html">Cancelacion</a>
+  
+    <li><a href="./Centro.html">Centro</a>
+  
+    <li><a href="./CentrosController.html">CentrosController</a>
+  
+    <li><a href="./CentrosHelper.html">CentrosHelper</a>
+  
+    <li><a href="./CitacionList.html">CitacionList</a>
+  
+    <li><a href="./Comite.html">Comite</a>
+  
+    <li><a href="./ComiteList.html">ComiteList</a>
+  
+    <li><a href="./ComiteMailer.html">ComiteMailer</a>
+  
+    <li><a href="./ComitesController.html">ComitesController</a>
+  
+    <li><a href="./ComitesHelper.html">ComitesHelper</a>
+  
+    <li><a href="./CommitteeMembers.html">CommitteeMembers</a>
+  
+    <li><a href="./CommitteesMembersController.html">CommitteesMembersController</a>
+  
+    <li><a href="./CommitteesMembersHelper.html">CommitteesMembersHelper</a>
+  
+    <li><a href="./Condicionamiento.html">Condicionamiento</a>
+  
+    <li><a href="./Configuracion.html">Configuracion</a>
+  
+    <li><a href="./ConfiguracionesController.html">ConfiguracionesController</a>
+  
+    <li><a href="./ConfiguracionesHelper.html">ConfiguracionesHelper</a>
+  
+    <li><a href="./Coordinador.html">Coordinador</a>
+  
+    <li><a href="./CoordinadoresController.html">CoordinadoresController</a>
+  
+    <li><a href="./CoordinadoresHelper.html">CoordinadoresHelper</a>
+  
+    <li><a href="./Estado.html">Estado</a>
+  
+    <li><a href="./EstadosController.html">EstadosController</a>
+  
+    <li><a href="./EstadosHelper.html">EstadosHelper</a>
+  
+    <li><a href="./Fcomite.html">Fcomite</a>
+  
+    <li><a href="./FcomitesController.html">FcomitesController</a>
+  
+    <li><a href="./FcomitesHelper.html">FcomitesHelper</a>
+  
+    <li><a href="./Historia.html">Historia</a>
+  
+    <li><a href="./HistoriasController.html">HistoriasController</a>
+  
+    <li><a href="./HistoriasHelper.html">HistoriasHelper</a>
+  
+    <li><a href="./InicioController.html">InicioController</a>
+  
+    <li><a href="./InicioHelper.html">InicioHelper</a>
+  
+    <li><a href="./Instructor.html">Instructor</a>
+  
+    <li><a href="./InstructorMailer.html">InstructorMailer</a>
+  
+    <li><a href="./InstructoresController.html">InstructoresController</a>
+  
+    <li><a href="./InstructoresHelper.html">InstructoresHelper</a>
+  
+    <li><a href="./LlamadoAtencion.html">LlamadoAtencion</a>
+  
+    <li><a href="./Object.html">Object</a>
+  
+    <li><a href="./Programa.html">Programa</a>
+  
+    <li><a href="./ProgramasController.html">ProgramasController</a>
+  
+    <li><a href="./ProgramasHelper.html">ProgramasHelper</a>
+  
+    <li><a href="./Queja.html">Queja</a>
+  
+    <li><a href="./QuejaList.html">QuejaList</a>
+  
+    <li><a href="./QuejaMailer.html">QuejaMailer</a>
+  
+    <li><a href="./QuejasController.html">QuejasController</a>
+  
+    <li><a href="./QuejasHelper.html">QuejasHelper</a>
+  
+    <li><a href="./Role.html">Role</a>
+  
+    <li><a href="./RolesController.html">RolesController</a>
+  
+    <li><a href="./RolesHelper.html">RolesHelper</a>
+  
+    <li><a href="./SessionsController.html">SessionsController</a>
+  
+    <li><a href="./SessionsHelper.html">SessionsHelper</a>
+  
+    <li><a href="./TipoDocumento.html">TipoDocumento</a>
+  
+    <li><a href="./TiposDocumentosController.html">TiposDocumentosController</a>
+  
+    <li><a href="./TiposDocumentosHelper.html">TiposDocumentosHelper</a>
+  
+    <li><a href="./User.html">User</a>
+  
+    <li><a href="./UserList.html">UserList</a>
+  
+    <li><a href="./UserRole.html">UserRole</a>
+  
+    <li><a href="./Usercomite.html">Usercomite</a>
+  
+    <li><a href="./UsercomiteList.html">UsercomiteList</a>
+  
+    <li><a href="./UsercomiteMailer.html">UsercomiteMailer</a>
+  
+    <li><a href="./UsercomitesController.html">UsercomitesController</a>
+  
+    <li><a href="./UsercomitesHelper.html">UsercomitesHelper</a>
+  
+    <li><a href="./UsersController.html">UsersController</a>
+  
+    <li><a href="./UsersHelper.html">UsersHelper</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class QuejaList</h1>
+
+  <div id="description" class="description">
+    
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Class Methods</h3>
+
+    
+      <div id="method-c-new" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">new</span><span
+            class="method-args">(queja, view)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <h2 id="method-c-new-label-M%C3%A9todo+constructor+de+la+clase+quejalist+">Método constructor de la clase quejalist </h2>
+          
+
+          
+          <div class="method-source-code" id="new-source">
+            <pre><span class="ruby-comment"># File app/pdfs/queja_list.rb, line 5</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">queja</span>, <span class="ruby-identifier">view</span>)
+  <span class="ruby-keyword">super</span>()
+  <span class="ruby-ivar">@queja</span> = <span class="ruby-identifier">queja</span>
+  <span class="ruby-ivar">@vista</span> = <span class="ruby-identifier">view</span>
+  <span class="ruby-identifier">queja_details</span>
+  <span class="ruby-identifier">fecha</span>
+  <span class="ruby-identifier">info</span>
+  <span class="ruby-identifier">descripcion</span>
+  <span class="ruby-identifier">testigo</span>
+  <span class="ruby-identifier">direccion</span>
+  <span class="ruby-identifier">firma</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- new-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- new-method -->
+
+    
+    </section><!-- public-class-method-details -->
+  
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-descripcion" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">descripcion</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <h2 id="method-i-descripcion-label-M%C3%A9todo+que+imprime+la+descripci%C3%B3n+de+la+falta+">Método que imprime la descripción de la falta </h2>
+          
+
+          
+          <div class="method-source-code" id="descripcion-source">
+            <pre><span class="ruby-comment"># File app/pdfs/queja_list.rb, line 69</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">descripcion</span>
+  <span class="ruby-identifier">table</span> ([[<span class="ruby-node">&quot;Tipo de Falta:  #{@queja.falta} \n&quot;</span> <span class="ruby-string">&quot;\n Descripcion Detallada: \n &quot;</span> <span class="ruby-node">&quot; \n #{@queja.descripcion}\n\n&quot;</span>],
+    ]),
+    <span class="ruby-value">:width</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">500</span> <span class="ruby-keyword">do</span>
+    <span class="ruby-identifier">columns</span>(<span class="ruby-value">1</span>).<span class="ruby-identifier">align</span> = <span class="ruby-value">:center</span>
+    <span class="ruby-keyword">self</span>.<span class="ruby-identifier">header</span> = <span class="ruby-keyword">true</span>
+    <span class="ruby-keyword">self</span>.<span class="ruby-identifier">column_widths</span> = {<span class="ruby-value">0</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">500</span>, <span class="ruby-value">2</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">70</span>}
+    <span class="ruby-identifier">columns</span>(<span class="ruby-value">1</span>).<span class="ruby-identifier">font_style</span> = <span class="ruby-value">:bold</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- descripcion-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- descripcion-method -->
+
+    
+      <div id="method-i-direccion" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">direccion</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <h2 id="method-i-direccion-label-M%C3%A9todo+que+imprime+el+atributo+nombreinfor+de+quejas">Método que imprime el atributo nombreinfor de quejas</h2>
+          
+
+          
+          <div class="method-source-code" id="direccion-source">
+            <pre><span class="ruby-comment"># File app/pdfs/queja_list.rb, line 94</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">direccion</span>
+    
+     <span class="ruby-identifier">table</span> ([[<span class="ruby-string">&quot;\nNombre y dirección de quien informa:     &quot;</span><span class="ruby-node">&quot;(Servidor Publico,Aprendiz,contratista,o cualquier persona que tenga conocimiento de los Hechos)\n\n  #{@queja.nombreinfor}&quot;</span>],
+       ]),
+       <span class="ruby-value">:width</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">500</span> <span class="ruby-keyword">do</span>
+       <span class="ruby-identifier">columns</span>(<span class="ruby-value">1</span>).<span class="ruby-identifier">align</span> = <span class="ruby-value">:center</span>
+       <span class="ruby-keyword">self</span>.<span class="ruby-identifier">header</span> = <span class="ruby-keyword">true</span>
+       <span class="ruby-keyword">self</span>.<span class="ruby-identifier">column_widths</span> = {<span class="ruby-value">0</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">500</span>, <span class="ruby-value">2</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">70</span>}
+       <span class="ruby-identifier">columns</span>(<span class="ruby-value">1</span>).<span class="ruby-identifier">font_style</span> = <span class="ruby-value">:bold</span>
+     <span class="ruby-keyword">end</span>
+ <span class="ruby-keyword">end</span></pre>
+          </div><!-- direccion-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- direccion-method -->
+
+    
+      <div id="method-i-fecha" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">fecha</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <h2 id="method-i-fecha-label-m%C3%A9todo+que+imprime+la+fecha+">método que imprime la fecha </h2>
+          
+
+          
+          <div class="method-source-code" id="fecha-source">
+            <pre><span class="ruby-comment"># File app/pdfs/queja_list.rb, line 45</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">fecha</span>
+    <span class="ruby-identifier">table</span> ([[<span class="ruby-string">&quot;\n\nFecha del Informe:  &quot;</span><span class="ruby-node">&quot;#{@queja.fechainforme}\n\n&quot;</span>],
+    ]),
+      <span class="ruby-value">:width</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">500</span> <span class="ruby-keyword">do</span>
+      <span class="ruby-identifier">columns</span>(<span class="ruby-value">1</span>).<span class="ruby-identifier">align</span> = <span class="ruby-value">:center</span>
+      <span class="ruby-keyword">self</span>.<span class="ruby-identifier">header</span> = <span class="ruby-keyword">true</span>
+      <span class="ruby-keyword">self</span>.<span class="ruby-identifier">column_widths</span> = {<span class="ruby-value">0</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">500</span>, <span class="ruby-value">2</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">70</span>}
+      <span class="ruby-identifier">columns</span>(<span class="ruby-value">1</span>).<span class="ruby-identifier">font_style</span> = <span class="ruby-value">:bold</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- fecha-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- fecha-method -->
+
+    
+      <div id="method-i-firma" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">firma</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <h2 id="method-i-firma-label-M%C3%A9todo+para+la+estructura+de+la+firma">Método para la estructura de la firma</h2>
+          
+
+          
+          <div class="method-source-code" id="firma-source">
+            <pre><span class="ruby-comment"># File app/pdfs/queja_list.rb, line 107</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">firma</span>
+    
+  <span class="ruby-identifier">table</span> ([[<span class="ruby-string">&quot;\nFirma de quien Informa:  \n\n\n\n&quot;</span>],
+        ]),
+        <span class="ruby-value">:width</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">500</span> <span class="ruby-keyword">do</span>
+        <span class="ruby-identifier">columns</span>(<span class="ruby-value">1</span>).<span class="ruby-identifier">align</span> = <span class="ruby-value">:center</span>
+        <span class="ruby-keyword">self</span>.<span class="ruby-identifier">header</span> = <span class="ruby-keyword">true</span>
+        <span class="ruby-keyword">self</span>.<span class="ruby-identifier">column_widths</span> = {<span class="ruby-value">0</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">500</span>, <span class="ruby-value">2</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">70</span>}
+        <span class="ruby-identifier">columns</span>(<span class="ruby-value">1</span>).<span class="ruby-identifier">font_style</span> = <span class="ruby-value">:bold</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- firma-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- firma-method -->
+
+    
+      <div id="method-i-info" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">info</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <h2 id="method-i-info-label-m%C3%A9todo+que+imprime++la+informaci%C3%B3n+del+aprendiz">método que imprime  la información del aprendiz</h2>
+          
+
+          
+          <div class="method-source-code" id="info-source">
+            <pre><span class="ruby-comment"># File app/pdfs/queja_list.rb, line 57</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">info</span>
+    <span class="ruby-identifier">table</span> ([[<span class="ruby-string">&quot;\n\nNombre del Aprendiz:   &quot;</span><span class="ruby-node">&quot;#{@queja.nombres} &quot;</span><span class="ruby-operator">+</span><span class="ruby-node">&quot;#{@queja.apellidos}               &quot;</span> <span class="ruby-string">&quot;  -CC:  &quot;</span><span class="ruby-node">&quot;#{@queja.identificacion}            &quot;</span> <span class="ruby-string">&quot;     \n\n Telefono:  &quot;</span><span class="ruby-node">&quot;#{@queja.telefono}&quot;</span> <span class="ruby-string">&quot;\n\nPrograma:   &quot;</span><span class="ruby-node">&quot;#{@queja.programa.abreviatura}&quot;</span> <span class="ruby-string">&quot;\n\nNo de Ficha:  &quot;</span><span class="ruby-node">&quot;#{@queja.ficha}\n\n&quot;</span>],
+      ]),
+        <span class="ruby-value">:width</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">500</span> <span class="ruby-keyword">do</span>
+        <span class="ruby-identifier">columns</span>(<span class="ruby-value">1</span>).<span class="ruby-identifier">align</span> = <span class="ruby-value">:center</span>
+        <span class="ruby-keyword">self</span>.<span class="ruby-identifier">header</span> = <span class="ruby-keyword">true</span>
+        <span class="ruby-keyword">self</span>.<span class="ruby-identifier">column_widths</span> = {<span class="ruby-value">0</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">500</span>, <span class="ruby-value">2</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">70</span>}
+        <span class="ruby-identifier">columns</span>(<span class="ruby-value">1</span>).<span class="ruby-identifier">font_style</span> = <span class="ruby-value">:bold</span>
+    <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- info-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- info-method -->
+
+    
+      <div id="method-i-logo" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">logo</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <h2 id="method-i-logo-label-M%C3%A9todo+para+definir+el+logo+con+su+ubicaci%C3%B3n+as%C3%AD+como+el+t%C3%ADtulo+del+reporte++">Método para definir el logo con su ubicación así como el título del reporte  </h2>
+          
+
+          
+          <div class="method-source-code" id="logo-source">
+            <pre><span class="ruby-comment"># File app/pdfs/queja_list.rb, line 20</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">logo</span>
+  <span class="ruby-identifier">logopath</span> =  <span class="ruby-node">&quot;#{Rails.root}/app/assets/images/senac.jpg&quot;</span>
+  <span class="ruby-identifier">image</span> <span class="ruby-identifier">logopath</span>, <span class="ruby-value">:width</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">50</span>, <span class="ruby-value">:height</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">64</span>
+  <span class="ruby-identifier">move_down</span> <span class="ruby-value">10</span>
+  <span class="ruby-identifier">draw_text</span> <span class="ruby-string">&quot;Listado de Quejas&quot;</span>, <span class="ruby-value">:at</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">150</span>, <span class="ruby-value">575</span>], <span class="ruby-identifier">size</span><span class="ruby-operator">:</span> <span class="ruby-value">22</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- logo-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- logo-method -->
+
+    
+      <div id="method-i-precision" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">precision</span><span
+            class="method-args">(num)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <h2 id="method-i-precision-label-M%C3%A9todo+para+dar+formato+a+la+salida+de+los+registros">Método para dar formato a la salida de los registros</h2>
+          
+
+          
+          <div class="method-source-code" id="precision-source">
+            <pre><span class="ruby-comment"># File app/pdfs/queja_list.rb, line 29</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">precision</span>(<span class="ruby-identifier">num</span>)
+  <span class="ruby-ivar">@vista</span>.<span class="ruby-identifier">number_with_precision</span>(<span class="ruby-identifier">num</span>, <span class="ruby-value">:locale</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:es</span> ,<span class="ruby-value">:precision</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">2</span>, <span class="ruby-value">:separator</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;,&quot;</span>, <span class="ruby-value">:delimiter</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;.&#39;</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- precision-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- precision-method -->
+
+    
+      <div id="method-i-queja" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">queja</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Método que imprime la tabla de las ordenes que hay</p>
+          
+
+          
+          <div class="method-source-code" id="queja-source">
+            <pre><span class="ruby-comment"># File app/pdfs/queja_list.rb, line 123</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">queja</span>
+  <span class="ruby-identifier">move_down</span> <span class="ruby-value">80</span>
+  <span class="ruby-identifier">table</span> (
+
+    [[<span class="ruby-string">&quot;Fecha creacion&quot;</span>,<span class="ruby-node">&quot;#{@queja.created_at}&quot;</span>],
+    [<span class="ruby-string">&quot;Arendiz&quot;</span>,<span class="ruby-node">&quot;#{@queja.nombres} &quot;</span><span class="ruby-operator">+</span><span class="ruby-node">&quot;#{@queja.apellidos} &quot;</span>],
+    [<span class="ruby-string">&quot;Telefono&quot;</span>,<span class="ruby-node">&quot;#{@queja.telefono}&quot;</span>],
+    [<span class="ruby-string">&quot;Email&quot;</span>,<span class="ruby-node">&quot;#{@queja.email}&quot;</span>],
+    [<span class="ruby-string">&quot;Descripcion&quot;</span>,<span class="ruby-node">&quot;#{@queja.descripcion}&quot;</span>],
+    [<span class="ruby-string">&quot;Telefono&quot;</span>,<span class="ruby-node">&quot;#{@queja.estado.nombre}&quot;</span>],
+    
+  ]),
+  <span class="ruby-value">:width</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">380</span> <span class="ruby-keyword">do</span>
+    <span class="ruby-identifier">row</span>(<span class="ruby-value">0</span>).<span class="ruby-identifier">font_style</span> = <span class="ruby-value">:bold</span>
+    <span class="ruby-identifier">columns</span>(<span class="ruby-value">1</span><span class="ruby-operator">..</span><span class="ruby-value">3</span>).<span class="ruby-identifier">align</span> = <span class="ruby-value">:right</span>
+    <span class="ruby-keyword">self</span>.<span class="ruby-identifier">header</span> = <span class="ruby-keyword">true</span>
+    <span class="ruby-comment">#align = { 0 =&gt; 80, 1 =&gt; :left, 2 =&gt; :right, 3 =&gt; :right, 4 =&gt; :right, 5 =&gt; :right, 6 =&gt; :right,7 =&gt; :right, 8 =&gt; :left} </span>
+    <span class="ruby-keyword">self</span>.<span class="ruby-identifier">column_widths</span> = {<span class="ruby-value">0</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">180</span>, <span class="ruby-value">1</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">200</span>}
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- queja-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- queja-method -->
+
+    
+      <div id="method-i-queja_details" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">queja_details</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <h2 id="method-i-queja_details-label-M%C3%A9todo+que+imprime+el+detalle+de+la+queja+">Método que imprime el detalle de la queja </h2>
+          
+
+          
+          <div class="method-source-code" id="queja_details-source">
+            <pre><span class="ruby-comment"># File app/pdfs/queja_list.rb, line 34</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">queja_details</span>
+  
+  <span class="ruby-identifier">bounding_box</span> [<span class="ruby-value">0</span>, <span class="ruby-identifier">cursor</span>], <span class="ruby-value">:width</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">bounds</span>.<span class="ruby-identifier">right</span>, <span class="ruby-value">:height</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">60</span> <span class="ruby-keyword">do</span>
+    
+    <span class="ruby-identifier">text</span> <span class="ruby-string">&quot;CENTRO DE FORMACIÓN EN DISEÑO, CONFECCIÓN Y MODA\nFORMATO DE INFORME O QUEJA&quot;</span>, <span class="ruby-value">:align</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:center</span>
+    <span class="ruby-identifier">image</span> <span class="ruby-node">&quot;#{Rails.root}/app/assets/images/senac.jpg&quot;</span>, <span class="ruby-value">:top</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">43</span>, <span class="ruby-value">:height</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">50</span>, <span class="ruby-value">:at</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">0</span>, <span class="ruby-identifier">bounds</span>.<span class="ruby-identifier">top</span>]
+  <span class="ruby-keyword">end</span>
+  
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- queja_details-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- queja_details-method -->
+
+    
+      <div id="method-i-testigo" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">testigo</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <h2 id="method-i-testigo-label-M%C3%A9todo+que+imprime+el+atributo+testigos+de+quejas">Método que imprime el atributo testigos de quejas</h2>
+          
+
+          
+          <div class="method-source-code" id="testigo-source">
+            <pre><span class="ruby-comment"># File app/pdfs/queja_list.rb, line 81</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">testigo</span>
+    
+    <span class="ruby-identifier">table</span> ([[<span class="ruby-node">&quot;\nTestigos o Pruebas que Aporta:  \n\n  #{@queja.testigos}&quot;</span>],
+      ]),
+      <span class="ruby-value">:width</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">500</span> <span class="ruby-keyword">do</span>
+      <span class="ruby-identifier">columns</span>(<span class="ruby-value">1</span>).<span class="ruby-identifier">align</span> = <span class="ruby-value">:center</span>
+      <span class="ruby-keyword">self</span>.<span class="ruby-identifier">header</span> = <span class="ruby-keyword">true</span>
+      <span class="ruby-keyword">self</span>.<span class="ruby-identifier">column_widths</span> = {<span class="ruby-value">0</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">500</span>, <span class="ruby-value">2</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">70</span>}
+      <span class="ruby-identifier">columns</span>(<span class="ruby-value">1</span>).<span class="ruby-identifier">font_style</span> = <span class="ruby-value">:bold</span>
+    <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- testigo-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- testigo-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.2.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

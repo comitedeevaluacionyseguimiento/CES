@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+<title>class Cancelacion - Rails Application Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>app/pdfs/cancelacion.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link">Prawn::Document
+  
+</nav>
+
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-c-new">::new</a>
+    
+    <li><a href="#method-i-condition_footer">#condition_footer</a>
+    
+    <li><a href="#method-i-consideraciones_datails">#consideraciones_datails</a>
+    
+    <li><a href="#method-i-firmas_datails">#firmas_datails</a>
+    
+    <li><a href="#method-i-header">#header</a>
+    
+    <li><a href="#method-i-resuelve_details">#resuelve_details</a>
+    
+    <li><a href="#method-i-subdirector_details">#subdirector_details</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./doc/README_FOR_APP.html">README_FOR_APP</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./Ability.html">Ability</a>
+  
+    <li><a href="./Acta.html">Acta</a>
+  
+    <li><a href="./ActaList.html">ActaList</a>
+  
+    <li><a href="./ActasController.html">ActasController</a>
+  
+    <li><a href="./ActasHelper.html">ActasHelper</a>
+  
+    <li><a href="./ApplicationController.html">ApplicationController</a>
+  
+    <li><a href="./ApplicationHelper.html">ApplicationHelper</a>
+  
+    <li><a href="./AprendicesController.html">AprendicesController</a>
+  
+    <li><a href="./AprendicesHelper.html">AprendicesHelper</a>
+  
+    <li><a href="./Aprendiz.html">Aprendiz</a>
+  
+    <li><a href="./Asignacioncomite.html">Asignacioncomite</a>
+  
+    <li><a href="./AsignacioncomitesController.html">AsignacioncomitesController</a>
+  
+    <li><a href="./AsignacioncomitesHelper.html">AsignacioncomitesHelper</a>
+  
+    <li><a href="./Ayuda.html">Ayuda</a>
+  
+    <li><a href="./AyudasController.html">AyudasController</a>
+  
+    <li><a href="./Cancelacion.html">Cancelacion</a>
+  
+    <li><a href="./Centro.html">Centro</a>
+  
+    <li><a href="./CentrosController.html">CentrosController</a>
+  
+    <li><a href="./CentrosHelper.html">CentrosHelper</a>
+  
+    <li><a href="./CitacionList.html">CitacionList</a>
+  
+    <li><a href="./Comite.html">Comite</a>
+  
+    <li><a href="./ComiteList.html">ComiteList</a>
+  
+    <li><a href="./ComiteMailer.html">ComiteMailer</a>
+  
+    <li><a href="./ComitesController.html">ComitesController</a>
+  
+    <li><a href="./ComitesHelper.html">ComitesHelper</a>
+  
+    <li><a href="./CommitteeMembers.html">CommitteeMembers</a>
+  
+    <li><a href="./CommitteesMembersController.html">CommitteesMembersController</a>
+  
+    <li><a href="./CommitteesMembersHelper.html">CommitteesMembersHelper</a>
+  
+    <li><a href="./Condicionamiento.html">Condicionamiento</a>
+  
+    <li><a href="./Configuracion.html">Configuracion</a>
+  
+    <li><a href="./ConfiguracionesController.html">ConfiguracionesController</a>
+  
+    <li><a href="./ConfiguracionesHelper.html">ConfiguracionesHelper</a>
+  
+    <li><a href="./Coordinador.html">Coordinador</a>
+  
+    <li><a href="./CoordinadoresController.html">CoordinadoresController</a>
+  
+    <li><a href="./CoordinadoresHelper.html">CoordinadoresHelper</a>
+  
+    <li><a href="./Estado.html">Estado</a>
+  
+    <li><a href="./EstadosController.html">EstadosController</a>
+  
+    <li><a href="./EstadosHelper.html">EstadosHelper</a>
+  
+    <li><a href="./Fcomite.html">Fcomite</a>
+  
+    <li><a href="./FcomitesController.html">FcomitesController</a>
+  
+    <li><a href="./FcomitesHelper.html">FcomitesHelper</a>
+  
+    <li><a href="./Historia.html">Historia</a>
+  
+    <li><a href="./HistoriasController.html">HistoriasController</a>
+  
+    <li><a href="./HistoriasHelper.html">HistoriasHelper</a>
+  
+    <li><a href="./InicioController.html">InicioController</a>
+  
+    <li><a href="./InicioHelper.html">InicioHelper</a>
+  
+    <li><a href="./Instructor.html">Instructor</a>
+  
+    <li><a href="./InstructorMailer.html">InstructorMailer</a>
+  
+    <li><a href="./InstructoresController.html">InstructoresController</a>
+  
+    <li><a href="./InstructoresHelper.html">InstructoresHelper</a>
+  
+    <li><a href="./LlamadoAtencion.html">LlamadoAtencion</a>
+  
+    <li><a href="./Object.html">Object</a>
+  
+    <li><a href="./Programa.html">Programa</a>
+  
+    <li><a href="./ProgramasController.html">ProgramasController</a>
+  
+    <li><a href="./ProgramasHelper.html">ProgramasHelper</a>
+  
+    <li><a href="./Queja.html">Queja</a>
+  
+    <li><a href="./QuejaList.html">QuejaList</a>
+  
+    <li><a href="./QuejaMailer.html">QuejaMailer</a>
+  
+    <li><a href="./QuejasController.html">QuejasController</a>
+  
+    <li><a href="./QuejasHelper.html">QuejasHelper</a>
+  
+    <li><a href="./Role.html">Role</a>
+  
+    <li><a href="./RolesController.html">RolesController</a>
+  
+    <li><a href="./RolesHelper.html">RolesHelper</a>
+  
+    <li><a href="./SessionsController.html">SessionsController</a>
+  
+    <li><a href="./SessionsHelper.html">SessionsHelper</a>
+  
+    <li><a href="./TipoDocumento.html">TipoDocumento</a>
+  
+    <li><a href="./TiposDocumentosController.html">TiposDocumentosController</a>
+  
+    <li><a href="./TiposDocumentosHelper.html">TiposDocumentosHelper</a>
+  
+    <li><a href="./User.html">User</a>
+  
+    <li><a href="./UserList.html">UserList</a>
+  
+    <li><a href="./UserRole.html">UserRole</a>
+  
+    <li><a href="./Usercomite.html">Usercomite</a>
+  
+    <li><a href="./UsercomiteList.html">UsercomiteList</a>
+  
+    <li><a href="./UsercomiteMailer.html">UsercomiteMailer</a>
+  
+    <li><a href="./UsercomitesController.html">UsercomitesController</a>
+  
+    <li><a href="./UsercomitesHelper.html">UsercomitesHelper</a>
+  
+    <li><a href="./UsersController.html">UsersController</a>
+  
+    <li><a href="./UsersHelper.html">UsersHelper</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class Cancelacion</h1>
+
+  <div id="description" class="description">
+    
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Class Methods</h3>
+
+    
+      <div id="method-c-new" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">new</span><span
+            class="method-args">(acta,configuracion,queja,fecha,año,view)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <h2 id="method-c-new-label-M%C3%A9todo+constructor+de+la+clase+cancelacionlist">Método constructor de la clase cancelacionlist</h2>
+          
+
+          
+          <div class="method-source-code" id="new-source">
+            <pre><span class="ruby-comment"># File app/pdfs/cancelacion.rb, line 4</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">acta</span>,<span class="ruby-identifier">configuracion</span>,<span class="ruby-identifier">queja</span>,<span class="ruby-identifier">fecha</span>,<span class="ruby-identifier">año</span>,<span class="ruby-identifier">view</span>)
+   <span class="ruby-keyword">super</span>(<span class="ruby-value">:margin</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">20</span>])
+   <span class="ruby-identifier">stroke_bounds</span>
+   <span class="ruby-ivar">@acta</span> = <span class="ruby-identifier">acta</span>
+   <span class="ruby-ivar">@configuracion</span> = <span class="ruby-identifier">configuracion</span>
+   <span class="ruby-ivar">@queja</span> = <span class="ruby-identifier">queja</span>
+   <span class="ruby-ivar">@fecha</span> = <span class="ruby-identifier">fecha</span>
+   <span class="ruby-ivar">@año</span> = <span class="ruby-identifier">año</span>
+   <span class="ruby-identifier">header</span>
+   <span class="ruby-identifier">subdirector_details</span>
+   <span class="ruby-identifier">consideraciones_datails</span>
+   <span class="ruby-identifier">start_new_page</span>(<span class="ruby-value">:margin</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">30</span>])
+   <span class="ruby-identifier">stroke_bounds</span>
+   <span class="ruby-identifier">resuelve_details</span>
+   <span class="ruby-identifier">firmas_datails</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- new-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- new-method -->
+
+    
+    </section><!-- public-class-method-details -->
+  
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-condition_footer" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">condition_footer</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <h2 id="method-i-condition_footer-label-M%C3%A9todo+con+la+estrucura+del+pie+de+pagina+">Método con la estrucura del pie de pagina </h2>
+          
+
+          
+          <div class="method-source-code" id="condition_footer-source">
+            <pre><span class="ruby-comment"># File app/pdfs/cancelacion.rb, line 92</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">condition_footer</span>
+
+        
+        <span class="ruby-identifier">draw_text</span> <span class="ruby-string">&quot;Ministerio de trabajo&quot;</span>, <span class="ruby-value">:at</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">225</span>, <span class="ruby-value">100</span>], <span class="ruby-identifier">size</span><span class="ruby-operator">:</span> <span class="ruby-value">10</span>
+        <span class="ruby-identifier">draw_text</span> <span class="ruby-string">&quot;Servicio Nacional De Aprendizaje&quot;</span>, <span class="ruby-value">:at</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">190</span>, <span class="ruby-value">89</span>], <span class="ruby-identifier">size</span><span class="ruby-operator">:</span> <span class="ruby-value">11</span>, <span class="ruby-value">:style</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:bold</span>
+        <span class="ruby-identifier">draw_text</span> <span class="ruby-string">&quot;Regional Antioquia&quot;</span>, <span class="ruby-value">:at</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">220</span>, <span class="ruby-value">78</span>], <span class="ruby-identifier">size</span><span class="ruby-operator">:</span> <span class="ruby-value">11</span>, <span class="ruby-value">:style</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:bold</span>
+        <span class="ruby-identifier">draw_text</span> <span class="ruby-string">&quot;________________________________________________&quot;</span>, <span class="ruby-value">:at</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">70</span>, <span class="ruby-value">76</span>], <span class="ruby-identifier">size</span><span class="ruby-operator">:</span> <span class="ruby-value">15</span>, <span class="ruby-value">:style</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:bold</span>
+        <span class="ruby-identifier">draw_text</span> <span class="ruby-string">&quot;Calle  63  58B03  Itagui-Calatrava&quot;</span>, <span class="ruby-value">:at</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">200</span>, <span class="ruby-value">65</span>], <span class="ruby-identifier">size</span><span class="ruby-operator">:</span> <span class="ruby-value">10</span>
+        <span class="ruby-identifier">draw_text</span> <span class="ruby-string">&quot;www.sena.edu.co - Línea gratuita nacional: 01 8000 9 10 270&quot;</span>, <span class="ruby-value">:at</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">140</span>, <span class="ruby-value">54</span>], <span class="ruby-identifier">size</span><span class="ruby-operator">:</span> <span class="ruby-value">10</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- condition_footer-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- condition_footer-method -->
+
+    
+      <div id="method-i-consideraciones_datails" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">consideraciones_datails</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <h2 id="method-i-consideraciones_datails-label-M%C3%A9todo+para+imprimir+el+atributo+%22considerando%22+de+configuaraci%C3%B3n">Método para imprimir el atributo “considerando” de configuaración</h2>
+          
+
+          
+          <div class="method-source-code" id="consideraciones_datails-source">
+            <pre><span class="ruby-comment"># File app/pdfs/cancelacion.rb, line 48</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">consideraciones_datails</span>
+    <span class="ruby-identifier">draw_text</span> <span class="ruby-string">&quot;CONSIDERANDO&quot;</span>, <span class="ruby-value">:at</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">230</span>,<span class="ruby-value">570</span>], <span class="ruby-value">:size</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">11</span>, <span class="ruby-value">:style</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:bold</span>
+    <span class="ruby-identifier">text_box</span> <span class="ruby-node">&quot;#{@configuracion.considerando}&quot;</span>, <span class="ruby-value">:at</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">10</span>,<span class="ruby-value">540</span>], <span class="ruby-value">:size</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">10</span>  
+    <span class="ruby-keyword">end</span></pre>
+          </div><!-- consideraciones_datails-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- consideraciones_datails-method -->
+
+    
+      <div id="method-i-firmas_datails" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">firmas_datails</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <h2 id="method-i-firmas_datails-label-M%C3%A9todo+con+la+estructura+de+los+espacios+para+las+firmas+">Método con la estructura de los espacios para las firmas </h2>
+          
+
+          
+          <div class="method-source-code" id="firmas_datails-source">
+            <pre><span class="ruby-comment"># File app/pdfs/cancelacion.rb, line 73</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">firmas_datails</span>
+
+        <span class="ruby-identifier">draw_text</span> <span class="ruby-node">&quot;#{@acta.subdirector}&quot;</span>, <span class="ruby-value">:at</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">270</span>, <span class="ruby-value">350</span>], <span class="ruby-identifier">size</span><span class="ruby-operator">:</span> <span class="ruby-value">10</span>
+<span class="ruby-identifier">draw_text</span> <span class="ruby-string">&quot;Subdirector&quot;</span>, <span class="ruby-value">:at</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">270</span>, <span class="ruby-value">335</span>], <span class="ruby-identifier">size</span><span class="ruby-operator">:</span> <span class="ruby-value">10</span>
+<span class="ruby-identifier">draw_text</span> <span class="ruby-string">&quot;Centro de formacion en diseño confecion y moda &quot;</span>, <span class="ruby-value">:at</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">270</span>, <span class="ruby-value">320</span>], <span class="ruby-identifier">size</span><span class="ruby-operator">:</span> <span class="ruby-value">10</span>
+<span class="ruby-identifier">draw_text</span> <span class="ruby-node">&quot;La decision se notifica el _________ de  #{@año}, personalmente a _________________________________________&quot;</span>, <span class="ruby-value">:at</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">10</span>, <span class="ruby-value">200</span>], <span class="ruby-identifier">size</span><span class="ruby-operator">:</span> <span class="ruby-value">10</span>
+<span class="ruby-identifier">draw_text</span> <span class="ruby-node">&quot;con #{@queja.tipo_documento.sigla} N°:#{@queja.identificacion},  alumno(a) de: #{@queja.programa.descripcion}  &quot;</span>, <span class="ruby-value">:at</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">10</span>, <span class="ruby-value">185</span>], <span class="ruby-identifier">size</span><span class="ruby-operator">:</span> <span class="ruby-value">10</span>
+<span class="ruby-identifier">draw_text</span> <span class="ruby-string">&quot;_________________________________&quot;</span>, <span class="ruby-value">:at</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">10</span>, <span class="ruby-value">80</span>], <span class="ruby-identifier">size</span><span class="ruby-operator">:</span> <span class="ruby-value">10</span>
+<span class="ruby-identifier">draw_text</span> <span class="ruby-string">&quot;El notificador&quot;</span>, <span class="ruby-value">:at</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">70</span>,<span class="ruby-value">65</span>], <span class="ruby-identifier">size</span><span class="ruby-operator">:</span> <span class="ruby-value">10</span>
+<span class="ruby-identifier">draw_text</span> <span class="ruby-string">&quot;_________________________________&quot;</span>, <span class="ruby-value">:at</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">10</span>,<span class="ruby-value">45</span>], <span class="ruby-identifier">size</span><span class="ruby-operator">:</span> <span class="ruby-value">10</span>
+<span class="ruby-identifier">draw_text</span> <span class="ruby-string">&quot;C.C&quot;</span>, <span class="ruby-value">:at</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">70</span>, <span class="ruby-value">35</span>], <span class="ruby-identifier">size</span><span class="ruby-operator">:</span> <span class="ruby-value">10</span>
+<span class="ruby-identifier">draw_text</span> <span class="ruby-string">&quot;_________________________________&quot;</span>, <span class="ruby-value">:at</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">350</span>,<span class="ruby-value">80</span>], <span class="ruby-identifier">size</span><span class="ruby-operator">:</span> <span class="ruby-value">10</span>
+<span class="ruby-identifier">draw_text</span> <span class="ruby-string">&quot;El notificado&quot;</span>, <span class="ruby-value">:at</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">410</span>,<span class="ruby-value">65</span>], <span class="ruby-identifier">size</span><span class="ruby-operator">:</span> <span class="ruby-value">10</span>
+<span class="ruby-identifier">draw_text</span> <span class="ruby-string">&quot;_________________________________&quot;</span>, <span class="ruby-value">:at</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">350</span>, <span class="ruby-value">45</span>], <span class="ruby-identifier">size</span><span class="ruby-operator">:</span> <span class="ruby-value">10</span>
+<span class="ruby-identifier">draw_text</span> <span class="ruby-string">&quot;C.C&quot;</span>, <span class="ruby-value">:at</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">410</span>, <span class="ruby-value">35</span>], <span class="ruby-identifier">size</span><span class="ruby-operator">:</span> <span class="ruby-value">10</span>
+        
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- firmas_datails-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- firmas_datails-method -->
+
+    
+      <div id="method-i-header" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">header</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <h2 id="method-i-header-label-M%C3%A9todo+para+definir+el+logo+con+su+ubicaci%C3%B3n+as%C3%AD+como+el+t%C3%ADtulo+del+pdf+">Método para definir el logo con su ubicación así como el título del pdf </h2>
+          
+
+          
+          <div class="method-source-code" id="header-source">
+            <pre><span class="ruby-comment"># File app/pdfs/cancelacion.rb, line 22</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">header</span>
+    <span class="ruby-identifier">logopath</span> =  <span class="ruby-node">&quot;#{Rails.root}/app/assets/images/senac.jpg&quot;</span>
+    <span class="ruby-identifier">image</span> <span class="ruby-identifier">logopath</span>, <span class="ruby-value">:width</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">40</span>, <span class="ruby-value">:height</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">40</span>, <span class="ruby-value">:at</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">50</span>,<span class="ruby-value">710</span>]
+
+    <span class="ruby-identifier">data</span> = ([[<span class="ruby-string">&quot;&quot;</span>, <span class="ruby-string">&quot;&quot;</span>]])
+    
+    <span class="ruby-identifier">move_down</span> <span class="ruby-value">40</span>
+    <span class="ruby-identifier">table</span> <span class="ruby-identifier">data</span>, <span class="ruby-value">:width</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">572</span> <span class="ruby-keyword">do</span>
+       <span class="ruby-keyword">self</span>.<span class="ruby-identifier">column_widths</span> = {<span class="ruby-value">0</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">160</span>, <span class="ruby-value">1</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">412</span>}
+       <span class="ruby-identifier">cells</span>.<span class="ruby-identifier">height</span> = <span class="ruby-value">60</span>
+    <span class="ruby-keyword">end</span>
+
+    <span class="ruby-identifier">draw_text</span> <span class="ruby-string">&quot;Antioquia&quot;</span>, <span class="ruby-value">:at</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">50</span>,<span class="ruby-value">664</span>], <span class="ruby-identifier">size</span><span class="ruby-operator">:</span> <span class="ruby-value">9</span>, <span class="ruby-identifier">bold</span><span class="ruby-operator">:</span> <span class="ruby-keyword">true</span>
+    <span class="ruby-identifier">draw_text</span> <span class="ruby-string">&quot;59202&quot;</span>, <span class="ruby-value">:at</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">74</span>,<span class="ruby-value">655</span>],<span class="ruby-identifier">size</span><span class="ruby-operator">:</span> <span class="ruby-value">8</span>
+    <span class="ruby-identifier">move_down</span> <span class="ruby-value">10</span>
+    <span class="ruby-identifier">draw_text</span> <span class="ruby-node">&quot;Resolucion N°                                          de #{@año}&quot;</span>, <span class="ruby-value">:at</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">210</span>, <span class="ruby-value">700</span>], <span class="ruby-identifier">size</span><span class="ruby-operator">:</span> <span class="ruby-value">9</span>, <span class="ruby-value">:style</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:bold</span>
+    <span class="ruby-identifier">draw_text</span> <span class="ruby-node">&quot;Por la cual se cancela el registro de matrícula de la aprendiz  #{@queja.nombres} #{@queja.apellidos}&quot;</span>, <span class="ruby-value">:at</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">170</span>, <span class="ruby-value">680</span>], <span class="ruby-identifier">size</span><span class="ruby-operator">:</span> <span class="ruby-value">9</span>
+    <span class="ruby-identifier">draw_text</span> <span class="ruby-node">&quot;identificado(a) con #{@queja.tipo_documento.descripcion} número #{@queja.identificacion}, N° de ficha #{@queja.ficha}&quot;</span>, <span class="ruby-value">:at</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">180</span>, <span class="ruby-value">670</span>], <span class="ruby-identifier">size</span><span class="ruby-operator">:</span> <span class="ruby-value">9</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- header-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- header-method -->
+
+    
+      <div id="method-i-resuelve_details" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">resuelve_details</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <h2 id="method-i-resuelve_details-label-M%C3%A9todo+para+imprimir+la+resoluci%C3%B3n+del+acta+">Método para imprimir la resolución del acta </h2>
+          
+
+          
+          <div class="method-source-code" id="resuelve_details-source">
+            <pre><span class="ruby-comment"># File app/pdfs/cancelacion.rb, line 54</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">resuelve_details</span>
+
+        <span class="ruby-identifier">draw_text</span> <span class="ruby-string">&quot;RESUELVE&quot;</span>, <span class="ruby-value">:at</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">230</span>,<span class="ruby-value">695</span>], <span class="ruby-value">:size</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">10</span>, <span class="ruby-value">:style</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:bold</span>
+        <span class="ruby-identifier">draw_text</span> <span class="ruby-string">&quot;ARTICULO PRIMERO.&quot;</span>, <span class="ruby-value">:at</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">10</span>,<span class="ruby-value">650</span>], <span class="ruby-value">:size</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">11</span>, <span class="ruby-value">:style</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:bold</span>
+        <span class="ruby-identifier">draw_text</span> <span class="ruby-string">&quot;Acoger la recomendación del Comité de Evaluación y Seguimiento, en el sentido de cancelar&quot;</span>, <span class="ruby-value">:at</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">130</span>,<span class="ruby-value">650</span>], <span class="ruby-value">:size</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">10</span>
+        <span class="ruby-identifier">text_box</span> <span class="ruby-node">&quot;el registro de matrícula para señor(a) #{@queja.nombres} #{@queja.apellidos} , identificado(a) con #{@queja.tipo_documento.descripcion} N° #{@queja.identificacion},  matriculada en el programa Manejo de Maquinas de  Confección Industrial,  porque injustificadamente no se presenta por mas de tres días consecutivos al desarrollo de su etapa productiva.&quot;</span>, <span class="ruby-value">:at</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">10</span>,<span class="ruby-value">645</span>], <span class="ruby-value">:size</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">10</span>
+
+        <span class="ruby-identifier">draw_text</span> <span class="ruby-string">&quot;ARTICULO SEGUNDO.&quot;</span>, <span class="ruby-value">:at</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">10</span>,<span class="ruby-value">590</span>], <span class="ruby-value">:size</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">10</span>, <span class="ruby-value">:style</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:bold</span>
+        <span class="ruby-identifier">draw_text</span> <span class="ruby-node">&quot;Como consecuencia de la cancelación de la matrícula para señor(a) #{@queja.nombres}#{@queja.apellidos}&quot;</span>, <span class="ruby-value">:at</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">120</span>,<span class="ruby-value">590</span>], <span class="ruby-value">:size</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">10</span>
+        <span class="ruby-identifier">text_box</span> <span class="ruby-string">&quot; pierde el carácter de Aprendiz SENA, y dicha sanción, tendrá una vigencia de seis (6) meses, término en el cual no podrá participar en procesos de ingreso a la institución.&quot;</span>, <span class="ruby-value">:at</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">10</span>,<span class="ruby-value">585</span>], <span class="ruby-value">:size</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">10</span>
+
+        <span class="ruby-identifier">draw_text</span> <span class="ruby-string">&quot;ARTICULO TERCERO.&quot;</span>, <span class="ruby-value">:at</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">10</span>,<span class="ruby-value">535</span>], <span class="ruby-value">:size</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">10</span>, <span class="ruby-value">:style</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:bold</span>
+        <span class="ruby-identifier">draw_text</span> <span class="ruby-string">&quot;Contra este acto procede el recurso de reposición, el cual deberá ser presentado mediante&quot;</span>, <span class="ruby-value">:at</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">120</span>,<span class="ruby-value">535</span>], <span class="ruby-value">:size</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">10</span>
+        <span class="ruby-identifier">text_box</span>  <span class="ruby-string">&quot;escrito dirigido a la Subdirectora del Centro, dentro de los cinco (5) días hábiles siguientes a la fecha de notificación personal o de la desfijación del edicto, anotando los fundamentos de la impugnación.&quot;</span>, <span class="ruby-value">:at</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">10</span>,<span class="ruby-value">530</span>], <span class="ruby-value">:size</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">10</span>
+
+        <span class="ruby-identifier">draw_text</span> <span class="ruby-string">&quot;COMUNÍQUESE Y CÚMPLASE&quot;</span>, <span class="ruby-value">:at</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">200</span>,<span class="ruby-value">400</span>], <span class="ruby-value">:size</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">11</span>, <span class="ruby-value">:style</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:bold</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- resuelve_details-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- resuelve_details-method -->
+
+    
+      <div id="method-i-subdirector_details" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">subdirector_details</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <h2 id="method-i-subdirector_details-label-M%C3%A9todo+con+la+informaci%C3%B3n+del+subdirector">Método con la información del subdirector</h2>
+          
+
+          
+          <div class="method-source-code" id="subdirector_details-source">
+            <pre><span class="ruby-comment"># File app/pdfs/cancelacion.rb, line 43</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">subdirector_details</span>
+<span class="ruby-identifier">text_box</span> <span class="ruby-node">&quot;#{@configuracion.subdirector}&quot;</span>, <span class="ruby-value">:at</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">10</span>,<span class="ruby-value">646</span>], <span class="ruby-value">:size</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">10</span> 
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- subdirector_details-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- subdirector_details-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.2.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

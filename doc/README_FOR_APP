@@ -1,0 +1,3 @@
+Esta documentación es una explicación básica  de los métodos que componen la app, centrándose en los que fueron creados por el desarrollador para cumplir una tarea especifica de la lógica de negocio los,  métodos  como: index, show, new,create,update,destroy que son generados por rails no se explican.
+
+La explicación que se realiza de los métodos es la del proceso que deben desarrollar.
