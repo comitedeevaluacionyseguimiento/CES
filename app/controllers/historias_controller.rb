@@ -3,7 +3,14 @@ class HistoriasController < ApplicationController
   before_filter :find_aprendiz_historia
 
   def index
-    @historias = @aprendiz.historias.all
+
+    if params[:search]
+      @searc = params[:search]
+    else
+      @searc = ""
+    end
+    
+    @historias = @aprendiz.historias.search(params[:search]).page(params[:page]).per_page(5)
 
     respond_to do |format|
       format.html # index.html.erb

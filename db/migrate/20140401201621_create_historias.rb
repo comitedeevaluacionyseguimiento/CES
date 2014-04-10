@@ -5,6 +5,7 @@ class CreateHistorias < ActiveRecord::Migration
       t.references :queja
       t.references :comite
       t.references :acta
+      t.string :fecha
       t.string :tipo_recomendacion
       t.text :llamada_atencion
 

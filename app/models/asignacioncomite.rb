@@ -17,4 +17,16 @@ class Asignacioncomite < ActiveRecord::Base
 		where('nombres like ? or apellidos like ? or fecha like ?', "%#{search}%", "%#{search}%","%#{search}%")
 	end
 
+	def self.aprendiz_queja(quejasid)
+
+    	quejasid = quejasid.split(", ")
+    	@quejas = []
+
+    	quejasid.each do |id|
+    		queja = Queja.find(id)
+    		@quejas << queja
+    	end
+    	return @quejas
+	end
+
 end

@@ -1,7 +1,37 @@
 <%- model_class = Historia -%>
-<div class="page-header colorp">
-  <h1>Historia de: <%= @aprendiz.name%></h1>
+<div class="buscador">
+  <div class="row-fluid">
+    <div class="row-fluid">
+      <div class="span6">
+        <%= form_tag request.path,:class=>"form-search", :method => 'get' do %>
+          <%= content_tag :label do %>
+            <br/>
+            <h2>Buscador </h2>
+            <div class="input-append" id='efecto1'>
+              <%= text_field_tag :search, params[:search],:placeholder => "fecha Comité Ej: 2014-05-23",:class=>" search-query search"  %>
+              <%= submit_tag "Buscar", :fecha_creacion => nil, :class=>"btn btn-info disable"%>
+            </div>
+          <% end %>
+        <% end %>
+
+        <div class="span6">
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+      </div>
+      <div class=" colorp"> 
+        <h3>Historia de: <%= @aprendiz.name%></h3>
+          <p>
+            Estado de Espera: <%= @historias.count %>
+          </p>
+
+      </div>
+    </div>
+  </div>
 </div>
+</br>
 <table class="table table-striped">
   <thead>
     <tr>

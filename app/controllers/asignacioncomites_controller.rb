@@ -56,6 +56,8 @@ class AsignacioncomitesController < ApplicationController
     @ids = params[:ids].split(",").map {|s| s.to_i}
     @horas = @hora.split(",")
     @comites = Comite.where(:fcomite_id => @fcomiteid)
+    
+    
 
     i = 0
     @horas.each do |hora|
@@ -66,25 +68,34 @@ class AsignacioncomitesController < ApplicationController
           @comite.nombreapren = "#{@comite.nombreapren}, #{@nombreasig.nombres}"
           @comite.idsqueja = "#{@comite.idsqueja}, #{@nombreasig.quejaid}"
           @comite.save
-          @quejas = Comite.aprendiz_queja(@comite.idsqueja)
+          @quejas = Asignacioncomite.aprendiz_queja(@comite.idsqueja)
 
           @quejas.each do  |queja|
             @aprendiz_informacion = Queja.find(queja.id)
             @historia = Historia.find_by_queja_id(queja.id)
+            @fcomite = Fcomite.find(@comite.fcomite_id)
             if !@historia
+              @fecha = @fcomite.fecha
               @aprendiz = Aprendiz.create(:name => "#{@aprendiz_informacion.nombres}" + " #{@aprendiz_informacion.apellidos}",:tipo_documento_id => @aprendiz_informacion.tipo_documento_id,:num_document => @aprendiz_informacion.identificacion,:programa_id => @aprendiz_informacion.programa_id,:ficha => @aprendiz_informacion.ficha)
-              Historia.create(:aprendiz_id => @aprendiz.id,:queja_id => @aprendiz_informacion.id,:comite_id => @comite.id)
+              Historia.create(:fecha => @fecha, :aprendiz_id => @aprendiz.id,:queja_id => @aprendiz_informacion.id,:comite_id => @comite.id)
             end
           end
         else
           @comite = Comite.create(:idsqueja => @nombreasig.quejaid, :hora => hora,:fcomite_id => @fcomiteid[0], :nombreapren => @nombreasig.nombres, :programa_id =>@programaid[0] , :ficha => @nombreasig.ficha,:asignacioncomite_id => @nombreasig.id, :quejaid => @nombreasig.quejaid)   
           @aprendiz_informacion = Queja.find(@comite.idsqueja)
           @aprendiz_existente = Aprendiz.find_by_num_document(@aprendiz_informacion.identificacion)
-          if !@aprendiz_existente
-            @aprendiz = Aprendiz.create(:name => "#{@aprendiz_informacion.nombres}" + "#{@aprendiz_informacion.apellidos}",:tipo_documento_id => @aprendiz_informacion.tipo_documento_id,:num_document => @aprendiz_informacion.identificacion,:programa_id => @aprendiz_informacion.programa_id,:ficha => @aprendiz_informacion.ficha)
-            @historia = Historia.create(:aprendiz_id => @aprendiz.id,:queja_id => @aprendiz_informacion.id,:comite_id => @comite.id)
-          else
-            @historia = Historia.create(:aprendiz_id => @aprendiz_existente.id,:queja_id => @aprendiz_informacion.id,:comite_id => @comite.id)
+          @historia = Historia.find_by_queja_id(@aprendiz_informacion.id)
+          @fcomite = Fcomite.find(@comite.fcomite_id)
+          if !@historia
+            
+            if !@aprendiz_existente
+              @fecha = @fcomite.fecha
+              @aprendiz = Aprendiz.create(:name => "#{@aprendiz_informacion.nombres}" + "#{@aprendiz_informacion.apellidos}",:tipo_documento_id => @aprendiz_informacion.tipo_documento_id,:num_document => @aprendiz_informacion.identificacion,:programa_id => @aprendiz_informacion.programa_id,:ficha => @aprendiz_informacion.ficha)
+              @historia = Historia.create(:fecha => @fecha,:aprendiz_id => @aprendiz.id,:queja_id => @aprendiz_informacion.id,:comite_id => @comite.id)
+            else
+              @fecha = @fcomite.fecha
+              @historia = Historia.create(:fecha => @fecha,:aprendiz_id => @aprendiz_existente.id,:queja_id => @aprendiz_informacion.id,:comite_id => @comite.id)
+            end
           end
         end
         @nombreasig.estado_id = 5

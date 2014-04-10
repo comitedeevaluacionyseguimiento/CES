@@ -14,20 +14,6 @@ Configuracion.create([
 
 
 
-Coordinador.create([
-  { :nombre => "christiam Camilo Gomez", :email => "chrystiamgg@misena.edu.co", :centro_id => 1, :created_at => "2013-12-10 07:18:38", :updated_at => "2013-12-10 07:18:38" },
-  { :nombre => "Alejandro Saldarriaga ", :email => "alejoalzate@misena.edu.co", :centro_id => 1, :created_at => "2014-02-24 21:24:16", :updated_at => "2014-02-24 21:24:16" }
-], :without_protection => true )
-
-
-
-
-Programa.create([
-  { :descripcion => "analisis y  de desarrollo  de sistemas de informacion", :abreviatura => "ADSI", :coordinador_id => 1, :created_at => "2013-12-03 05:02:14", :updated_at => "2013-12-03 05:02:14", :estado => true },
-  { :descripcion => "Diseño de joyas ", :abreviatura => "DJ", :coordinador_id => 2, :created_at => "2014-02-13 07:04:42", :updated_at => "2014-02-13 07:04:42", :estado => true }
-], :without_protection => true )
-
-
 Estado.create([
   { :nombre => "en espera ", :descripcion => "la queja fue creada y espera a ser enviada a comite ", :created_at => "2013-12-03 00:50:45", :updated_at => "2013-12-03 00:50:45" },
   { :nombre => "remitido a comite", :descripcion => "la queja fue remitida a comite", :created_at => "2013-12-03 00:53:25", :updated_at => "2013-12-03 00:53:25" },

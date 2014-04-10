@@ -5,10 +5,11 @@
     </li>
   
     <% if has_role == "instructor" or  has_role == "admin" or has_role == "coordinador" %>
-
-      <li>
-        <%= link_to('Usuarios', :users) %> 
-      </li>
+      <% if has_role == "admin" %>
+        <li>
+          <%= link_to('Usuarios', :users) %> 
+        </li>
+      <% end %>
 
       <li class="borlink">
         <%= link_to('Quejas', :quejas) %> 
@@ -41,8 +42,15 @@
                 salir <i class="icon-briefcase"></i>
               <% end %>
             <li class="divider"></li>
+            <% if has_role == "instructor"%>
+              <li>
+                <%= link_to(:users) do %>
+                  Perfil <i class="icon-user"></i>
+                <% end %>
+              </li>
+            <% end %>
           </li>
-        </ul>
+        </ul> 
       </li>		
   <% end %>
 
